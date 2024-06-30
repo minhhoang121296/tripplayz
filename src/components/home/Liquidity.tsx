@@ -17,11 +17,11 @@ export const Liquidity = () => {
             alt: 'citibank'
         },
         {
-            src: '/images/branch/Deutsche_Bank.png',
+            src: '/images/branch/Deutsche_Bank-Logo.png',
             alt: 'Deutsche_Bank'
         },
         {
-            src: '/images/branch/Dukascopy.png',
+            src: '/images/branch/Dukascopy_Swiss_Banking.png',
             alt: 'Dukascopy'
         },
         {
@@ -33,7 +33,7 @@ export const Liquidity = () => {
             alt: 'icbc-seeklogo'
         },
         {
-            src: '/images/branch/lloyds-bank-seeklog.png',
+            src: '/images/branch/lloyds-bank-seeklogo.png',
             alt: 'lloyds-bank-seeklog'
         },
         {
@@ -48,7 +48,7 @@ export const Liquidity = () => {
 
     return (
         <div className='container mx-auto flex w-full flex-col gap-6 px-5 md:gap-[60px]'>
-            <span className='md:text-4xlm text-3xl font-semibold'>
+            <span className='text-3xl font-semibold md:text-4xlm'>
                 {t('Liquidity_Providers')}
             </span>
             <div className='grid grid-cols-2 gap-10 md:grid-cols-5'>

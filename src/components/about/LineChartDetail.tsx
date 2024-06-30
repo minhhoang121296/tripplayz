@@ -1,6 +1,6 @@
 export const LineChartDetail = () => {
     return (
-        <div className='bg-black-darkBlack w-full'>
+        <div className='w-full bg-black-darkBlack'>
             <div className='container mx-auto flex w-full flex-col gap-[50px] px-5 py-[44px] md:gap-[62px] md:py-[94px]'>
                 <div className='flex w-full flex-col gap-[30px] text-center text-white'>
                     <p className='text-3xl font-semibold md:text-4xl'>
@@ -34,7 +34,7 @@ export const LineChartDetail = () => {
                     <img
                         src='/images/app/line-chart.png'
                         alt='chart'
-                        className='max-h-[320px] w-full object-fill  md:min-w-[620px]'
+                        className='max-h-[320px] w-full object-fill  md:w-[620px]'
                     />
                 </div>
             </div>
