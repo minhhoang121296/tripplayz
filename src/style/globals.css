@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    *:lang(en) {
+        font-family: var(--montserrat) !important;
+    }
+    *:lang(fa) {
+        font-family: var(--montserrat) !important;
+    }
+}
