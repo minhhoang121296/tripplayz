@@ -12,7 +12,7 @@ export const TableTabDetail = () => {
     return (
         <>
             {width > 1024 && (
-                <div className='bg-white flex w-full flex-col gap-10 rounded-lg  px-10 py-9 shadow-md'>
+                <div className='flex w-full flex-col gap-10 rounded-lg bg-white  px-10 py-9 shadow-md'>
                     <div className='flex flex-row justify-between'>
                         <div className='tiem-center gap-2s flex flex-row gap-2'>
                             <span className='font-bold'>220</span>
@@ -116,7 +116,7 @@ export const TableTabDetail = () => {
                         {[1, 2, 3, 4].map((el, index) => (
                             <div
                                 className={cn(
-                                    'bg-white flex flex-row rounded-sm p-5 shadow-xl'
+                                    'flex flex-row rounded-xl bg-white p-5 shadow-sm'
                                 )}
                                 key={index}
                             >

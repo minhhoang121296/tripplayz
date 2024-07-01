@@ -11,36 +11,51 @@ export const StockDetail = () => {
     return (
         <div className='container mx-auto flex w-full flex-col gap-10 px-5'>
             <Tabs defaultValue='forex' className='w-full'>
-                <TabsList className='flex flex-row overflow-auto'>
-                    <TabsTrigger className='min-w-32' value='forex'>
+                <TabsList className='m-0 flex flex-row overflow-auto'>
+                    <TabsTrigger
+                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        value='forex'
+                    >
                         Forex
                     </TabsTrigger>
-                    <TabsTrigger className='min-w-32' value='crypto'>
+                    <TabsTrigger
+                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        value='crypto'
+                    >
                         Crypto
                     </TabsTrigger>
-                    <TabsTrigger className='min-w-32' value='stocks'>
+                    <TabsTrigger
+                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        value='stocks'
+                    >
                         Stocks
                     </TabsTrigger>
-                    <TabsTrigger className='min-w-32' value='commodities'>
+                    <TabsTrigger
+                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        value='commodities'
+                    >
                         Commodities
                     </TabsTrigger>
-                    <TabsTrigger className='min-w-32' value='etfs'>
+                    <TabsTrigger
+                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        value='etfs'
+                    >
                         ETFs
                     </TabsTrigger>
                 </TabsList>
-                <TabsContent value='forex'>
+                <TabsContent className='mt-0' value='forex'>
                     <TableTabDetail />
                 </TabsContent>
-                <TabsContent value='crypto'>
+                <TabsContent className='mt-0' value='crypto'>
                     <TableTabDetail />
                 </TabsContent>
-                <TabsContent value='stocks'>
+                <TabsContent className='mt-0' value='stocks'>
                     <TableTabDetail />
                 </TabsContent>
-                <TabsContent value='commodities'>
+                <TabsContent className='mt-0' value='commodities'>
                     <TableTabDetail />
                 </TabsContent>
-                <TabsContent value='etfs'>
+                <TabsContent className='mt-0' value='etfs'>
                     <TableTabDetail />
                 </TabsContent>
             </Tabs>

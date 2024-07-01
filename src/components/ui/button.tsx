@@ -12,11 +12,11 @@ const buttonVariants = cva(
                 default:
                     'bg-slate-900 text-slate-50 hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90',
                 destructive:
-                    'bg-red-500 text-slate-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90',
+                    'bg-magenta-500 text-slate-50 hover:bg-magenta-500/90 dark:bg-magenta-900 dark:text-slate-50 dark:hover:bg-magenta-900/90',
                 primary:
                     'bg-blue text-slate-50 hover:bg-blue/90 dark:bg-blue-900 dark:text-slate-50 dark:hover:bg-blue-900/90',
                 outline:
-                    'border border-black bg-white hover:bg-slate-100 hover:text-slate-900',
+                    'border border-black bg-white hover:bg-slate-100 hover:text-slate-900 font-semibold',
                 outlineBlue:
                     'border border-blue bg-white text-blue hover:bg-blue-100 hover:text-blue-900',
                 outlineRed:

@@ -9,10 +9,10 @@ export const Support = () => {
 
     return (
         <div className='container mx-auto flex w-full flex-col gap-[30px]   md:gap-[50px]'>
-            <div className='bg-white gap-[50px]shadow-sm flex w-full flex-col rounded-2xl py-[45px] md:flex-row'>
+            <div className='flex w-full flex-col gap-[50px] rounded-2xl bg-white py-[45px] shadow-sm md:flex-row'>
                 <div className='flex h-full w-full flex-col items-center gap-6 text-center'>
-                    <div className='bg-blue-100 h-[120px] w-[120px] rounded-full p-4'>
-                        <div className='bg-blue flex h-full w-full items-center justify-center rounded-full'>
+                    <div className='h-[120px] w-[120px] rounded-full bg-blue-100 p-4'>
+                        <div className='flex h-full w-full items-center justify-center rounded-full bg-blue'>
                             <IconBase
                                 icon='platform'
                                 color={Colors.white}
@@ -29,8 +29,8 @@ export const Support = () => {
                     </span>
                 </div>
                 <div className='flex h-full w-full flex-col items-center gap-6 text-center'>
-                    <div className='bg-gray-300 h-[120px] w-[120px] rounded-full p-4'>
-                        <div className='bg-black flex h-full w-full items-center justify-center rounded-full'>
+                    <div className='h-[120px] w-[120px] rounded-full bg-gray-300 p-4'>
+                        <div className='flex h-full w-full items-center justify-center rounded-full bg-black'>
                             <IconBase
                                 icon='practice'
                                 color={Colors.white}
@@ -47,8 +47,8 @@ export const Support = () => {
                     </span>
                 </div>
                 <div className='flex h-full w-full flex-col items-center gap-6 text-center'>
-                    <div className='bg-blueGray-300 h-[120px] w-[120px] rounded-full p-4'>
-                        <div className='bg-blueGray-500 flex h-full w-full items-center justify-center rounded-full'>
+                    <div className='h-[120px] w-[120px] rounded-full bg-blueGray-300 p-4'>
+                        <div className='flex h-full w-full items-center justify-center rounded-full bg-blueGray-500'>
                             <IconBase
                                 icon='platform'
                                 color={Colors.white}

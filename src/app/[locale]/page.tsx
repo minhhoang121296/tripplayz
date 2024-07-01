@@ -12,7 +12,9 @@ export default function HomePage() {
     const t = useTranslations('')
     return (
         <div className='flex w-full flex-col'>
-            <div className='bg-white-lightWhite flex w-full flex-col gap-[60px] md:gap-[130px]'>
+            <div
+                className={`flex w-full flex-col gap-[60px] bg-white-lightWhite bg-[url('/images/app/grid6.png')]  md:gap-[130px]`}
+            >
                 <Hero />
                 <StockDetail />
                 <Deposit />
