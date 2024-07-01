@@ -13,7 +13,7 @@ export const BarCharDetail = () => {
                 </div>
                 <div className='w-full'>
                     <img
-                        src='/images/app/barChart.png'
+                        src='/images/app/barchart.png'
                         alt='chart'
                         className='w-full object-contain'
                     />
