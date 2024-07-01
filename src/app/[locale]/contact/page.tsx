@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 export default function Contact() {
     const t = useTranslations('')
     return (
-        <div className='bg-white-lightWhite flex w-full flex-col'>
+        <div className={`bg-white-lightWhite bg-[url('/images/app/grid6.png')] flex w-full flex-col`}>
             <div className='h-[60px]'></div>
             <SendForm />
             <InforToContact />

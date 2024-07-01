@@ -9,7 +9,7 @@ export const Support = () => {
 
     return (
         <div className='container mx-auto flex w-full flex-col gap-[30px]   md:gap-[50px]'>
-            <div className='flex w-full flex-col gap-[50px] rounded-2xl bg-white py-[45px] shadow-sm md:flex-row'>
+            <div className='flex w-full flex-col gap-[50px] md:px-[100px] px-2.5 rounded-2xl bg-white py-[45px] shadow-sm md:flex-row'>
                 <div className='flex h-full w-full flex-col items-center gap-6 text-center'>
                     <div className='h-[120px] w-[120px] rounded-full bg-blue-100 p-4'>
                         <div className='flex h-full w-full items-center justify-center rounded-full bg-blue'>

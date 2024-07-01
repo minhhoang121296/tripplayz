@@ -126,15 +126,17 @@ export function InputForm() {
                         </FormItem>
                     )}
                 />
-                <Button
-                    size={'lg'}
-                    className='w-full gap-2'
-                    variant={'primary'}
-                    type='submit'
-                >
-                    <ArrowRight />
-                    {t('send')}
-                </Button>
+                <div className='flex flex-row justify-end'>
+                    <Button
+                        size={'lg'}
+                        className='w-full md:w-auto gap-2'
+                        variant={'primary'}
+                        type='submit'
+                    >
+                        <ArrowRight />
+                        {t('send')}
+                    </Button>
+                </div>
             </form>
         </Form>
     )
