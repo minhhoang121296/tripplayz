@@ -6,7 +6,7 @@ export const InforToContact = () => {
     const t = useTranslations('')
 
     return (
-        <div className='container mx-auto flex w-full flex-col gap-[30px] px-5 md:gap-[50px] xl:px-[235px]'>
+        <div className='container mx-auto flex w-full flex-col gap-[30px] px-[25px] md:gap-[50px] xl:px-[235px]'>
             <div className='flex w-full flex-col gap-[30px] rounded-2xl py-[45px] md:flex-row'>
                 <div className='flex h-full w-full flex-col items-center gap-2.5 text-center'>
                     <div className='h-[120px] w-[120px] rounded-full bg-blue-100 p-4'>
@@ -21,7 +21,7 @@ export const InforToContact = () => {
                     <span className='text-lg font-semibold'>
                         +13 456 789 000
                     </span>
-                    <span className='text-basem p-2.5'>
+                    <span className='p-2.5 text-basem'>
                         {t('quick_assistance')}
                     </span>
                 </div>
@@ -38,7 +38,7 @@ export const InforToContact = () => {
                     <span className='text-lg font-semibold'>
                         support@kerdant.com
                     </span>
-                    <span className='text-basem p-2.5'>
+                    <span className='p-2.5 text-basem'>
                         {t('email_support')}
                     </span>
                 </div>
@@ -55,7 +55,7 @@ export const InforToContact = () => {
                     <span className='text-lg font-semibold'>
                         {t('live_chat')}
                     </span>
-                    <span className='text-basem p-2.5'>
+                    <span className='p-2.5 text-basem'>
                         {t('chat_support')}
                     </span>
                 </div>

@@ -6,7 +6,7 @@ import { Button } from '../ui/button'
 export const Enjoy = () => {
     const t = useTranslations('')
     return (
-        <div className='container mx-auto mb-[130px] flex w-full flex-col gap-[65px] px-5 xl:px-[200px]'>
+        <div className='container mx-auto mb-[130px] flex w-full flex-col gap-[65px]  xl:px-[200px]'>
             <div className='flex-1'>
                 <div className='flex w-full flex-col gap-[45px]'>
                     <img
@@ -14,8 +14,8 @@ export const Enjoy = () => {
                         alt='enjoy'
                         className='w-full md:hidden'
                     />
-                    <div className='flex w-full flex-col gap-[30px]'>
-                        <span className='md:text-4xls text-3xl font-semibold'>
+                    <div className='flex w-full flex-col gap-[45px] px-5'>
+                        <span className='text-3xl font-semibold md:text-4xls'>
                             {t('ultimate_platform_enjoyment')}
                         </span>
                         <div className='flex flex-col gap-5'>
@@ -26,7 +26,7 @@ export const Enjoy = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex w-full flex-row gap-[100px]'>
+            <div className='flex w-full flex-row gap-[100px] px-5'>
                 <div className='hidden items-start md:flex'>
                     <img
                         src='/images/app/phone.png'
@@ -38,7 +38,7 @@ export const Enjoy = () => {
                     <span className='text-2xl font-bold text-blue'>
                         {t('available')}
                     </span>
-                    <div className='mt-[50px] grid grid-cols-2 gap-5'>
+                    <div className='mt-[50px] grid grid-cols-2 gap-[37px] md:gap-5'>
                         <div className='flex flex-row items-center gap-2'>
                             <IconBase icon='googlepaly' size={36} />
                             <span className='text-base font-medium'>
@@ -66,7 +66,7 @@ export const Enjoy = () => {
                     </div>
                     <div>
                         <Button
-                            className='mt-[57px] '
+                            className='mt-[57px] w-full md:w-auto '
                             variant={'primaryShadow'}
                             size={'md'}
                         >

@@ -7,8 +7,8 @@ import { IconBase } from '../custom/IconBase'
 export const Footer = () => {
     const t = useTranslations('')
     return (
-        <div className='flex flex-col gap-10 bg-black-darkBlack pb-[75px] pt-[72px]'>
-            <div className='container mx-auto  flex w-full flex-col gap-[30px] px-[200px]  md:flex-row md:justify-between'>
+        <div className='flex w-full flex-col gap-10 bg-black-darkBlack pb-[75px] pt-[72px]'>
+            <div className='container mx-auto flex w-full flex-col gap-[30px] px-10 md:flex-row  md:justify-between xl:px-[200px]'>
                 <div className='flex flex-col gap-[30px] md:flex-row md:gap-[108px]'>
                     <div className='flex flex-col gap-5'>
                         <span className='text-lg font-semibold text-white'>
@@ -60,9 +60,16 @@ export const Footer = () => {
                                 size={24}
                                 color={Colors.white}
                             />
-                            <span className='text-baselg text-white'>
+
+                            <a
+                                href='https://www.facebook.com/kerdantofficial'
+                                target='_blank'
+                                rel='noreferrer'
+                                title='Facebook'
+                                className='text-baselg text-white'
+                            >
                                 Facebook
-                            </span>
+                            </a>
                         </div>
 
                         <div className='flex flex-row items-center gap-2'>
@@ -71,9 +78,15 @@ export const Footer = () => {
                                 size={24}
                                 color={Colors.white}
                             />
-                            <span className='text-baselg text-white'>
+                            <a
+                                href='https://www.instagram.com/kerdantofficial/'
+                                target='_blank'
+                                rel='noreferrer'
+                                title='Instagram'
+                                className='text-baselg text-white'
+                            >
                                 Instagram
-                            </span>
+                            </a>
                         </div>
 
                         <div className='flex flex-row items-center gap-2'>
@@ -82,9 +95,15 @@ export const Footer = () => {
                                 size={24}
                                 color={Colors.white}
                             />
-                            <span className='text-baselg text-white'>
+                            <a
+                                href='https://twitter.com/kerdantofficial'
+                                target='_blank'
+                                rel='noreferrer'
+                                title='Twitter'
+                                className='text-baselg text-white'
+                            >
                                 Twitter
-                            </span>
+                            </a>
                         </div>
 
                         <div className='flex flex-row items-center gap-2'>
@@ -93,9 +112,15 @@ export const Footer = () => {
                                 size={24}
                                 color={Colors.white}
                             />
-                            <span className='text-baselg text-white'>
+                            <a
+                                href='https://www.linkedin.com/company/kerdantofficial/'
+                                target='_blank'
+                                rel='noreferrer'
+                                title='LinkedIn'
+                                className='text-baselg text-white'
+                            >
                                 LinkedIn
-                            </span>
+                            </a>
                         </div>
                         <div className='flex flex-row items-center gap-2'>
                             <IconBase
@@ -103,14 +128,20 @@ export const Footer = () => {
                                 size={24}
                                 color={Colors.white}
                             />
-                            <span className='text-baselg text-white'>
+                            <a
+                                href='https://discord.com/invite/kerdantofficial'
+                                target='_blank'
+                                rel='noreferrer'
+                                title='Discord'
+                                className='text-baselg text-white'
+                            >
                                 Discord
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='container mx-auto flex flex-col gap-[30px] px-[200px]'>
+            <div className='container mx-auto flex flex-col gap-[30px] px-2.5 md:px-0 xl:px-[200px]'>
                 <p className='text-xsm text-white/50'>{t('risk_warning')}</p>
             </div>
         </div>

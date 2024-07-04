@@ -10,17 +10,24 @@ import { Button } from '../ui/button'
 export const Deposit = () => {
     const t = useTranslations('')
     return (
-        <div className='container mx-auto mb-[141px] flex w-full flex-col gap-6 px-5 md:gap-[40px] xl:px-[200px]'>
-            <span className='md:text-4xls text-3xl font-semibold'>
+        <div className='mdmb-[141px] container mx-auto mb-[101px] flex w-full flex-col gap-[40px] px-5 xl:px-[200px]'>
+            <span className='text-3xl font-semibold md:text-4xls'>
                 {t('deposits_and_withdraw')}
             </span>
             <div className='item-start flex flex-col gap-[30px] md:flex-row md:gap-[120px]'>
                 <div className='flex flex-1 flex-col gap-[40px]'>
-                    <div className='text-basem flex flex-1 flex-col gap-5'>
+                    <div className='flex flex-1 flex-col gap-5 text-basem'>
                         <span>{t('payment_systems_info')}</span>
                         <span className='font-bold'>
                             {t('minimum_deposit')} - $10
                         </span>
+                    </div>
+                    <div className='flex flex-1 md:hidden'>
+                        <img
+                            src='/images/credit_card/list-card.png'
+                            alt='credit_card'
+                            className='h-[110px] w-full object-contain'
+                        />
                     </div>
                     <div className='flex flex-col gap-5 md:flex-row'>
                         <Button size={'md'} variant={'whiteOutline'}>
@@ -32,29 +39,12 @@ export const Deposit = () => {
                         </Button>
                     </div>
                 </div>
-                <div className='flex flex-1'>
+                <div className='hidden flex-1 md:flex'>
                     <img
                         src='/images/credit_card/list-card.png'
                         alt='credit_card'
                         className='h-[110px] w-full object-contain'
                     />
-                    {/* <Swiper
-                        pagination={true}
-                        modules={[Pagination]}
-                        className='mySwiper'
-                    >
-                        {[1, 2, 3].map((el, index) => (
-                            <SwiperSlide key={index}>
-                                <div className='pb-20'>
-                                    <img
-                                        src='/images/credit_card/list-card.png'
-                                        alt='credit_card'
-                                        className='w-full object-contain'
-                                    />
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper> */}
                 </div>
             </div>
         </div>

@@ -11,12 +11,11 @@ export default function About() {
     const t = useTranslations('')
     return (
         <div className='flex w-full flex-col bg-white-lightWhite'>
-            <div className='h-[100px] flex-none'></div>
+            <div className='h-[60px] flex-none md:h-[100px]'></div>
             <Hero />
             <SummerizeInfor />
             <LineChartDetail />
             <Ambassadors />
-            {/* <OurAdvisors /> */}
             <ChatTime />
             <BarCharDetail />
             <OnlneTrading />

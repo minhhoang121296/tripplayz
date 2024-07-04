@@ -2,16 +2,17 @@
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 import { useWindowSize } from 'react-use'
+import { StockMarketSimulator } from './StockValue'
 
 export const Ambassadors = () => {
     const t = useTranslations('')
     const { width } = useWindowSize()
 
     return (
-        <div className='container mx-auto flex w-full flex-col gap-[219px] px-5 py-[44px]  md:gap-[133px] md:pb-[133px] md:pt-[100px] xl:px-[188px]'>
+        <div className='container mx-auto flex w-full flex-col gap-[219px] px-5 pb-[209px] pt-[90px]  md:gap-[133px]  md:py-[44px] md:pb-[133px] md:pt-[100px] xl:px-[188px]'>
             <div className='flex w-full flex-col gap-[30px] text-center md:gap-[64px]'>
                 <div className='flex w-full flex-col items-center justify-center gap-[30px] text-center'>
-                    <p className='md:text-4xls text-3xl font-semibold'>
+                    <p className='text-3xl font-semibold md:text-4xls'>
                         {t('accounts_registered')}
                     </p>
                     <span className='text-basem md:w-[430px]'>
@@ -24,7 +25,11 @@ export const Ambassadors = () => {
                             {t('may')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            134 580
+                            <StockMarketSimulator
+                                initialValue={134580}
+                                fluctuationRange={10}
+                                intervalMs={2000}
+                            />
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>
@@ -33,7 +38,11 @@ export const Ambassadors = () => {
                             {t('june')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            6 827 280
+                            <StockMarketSimulator
+                                initialValue={6827280}
+                                fluctuationRange={10}
+                                intervalMs={2000}
+                            />
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>
@@ -42,7 +51,11 @@ export const Ambassadors = () => {
                             {t('muly')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_30px_40px_#0055FF80]'>
-                            20 375 097
+                            <StockMarketSimulator
+                                initialValue={20375097}
+                                fluctuationRange={10}
+                                intervalMs={2000}
+                            />
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>

@@ -39,11 +39,11 @@ export const Header: FC<Props> = ({ locale }) => {
     return (
         <div
             className={cn(
-                'fixed top-0 z-50 flex w-full flex-col border-b border-[#818181]',
+                'fixed top-0 z-50 flex w-full flex-col border-[#818181] md:border-b',
                 pathname == '/' ? 'backdrop-blur-lg' : 'bg-white-lightWhite'
             )}
         >
-            <div className='mx-auto flex h-[100px] w-full flex-row items-center justify-between bg-transparent px-2 py-5 lg:container md:px-10'>
+            <div className='mx-auto flex h-[60px] w-full flex-row items-center justify-between bg-transparent px-2.5 py-5 lg:container md:h-[100px] md:px-10'>
                 <div className='flex flex-row items-center md:gap-[82px]'>
                     <Link lang={locale} href='/'>
                         <div className='flex flex-row items-center'>
