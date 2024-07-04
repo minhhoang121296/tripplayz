@@ -9,10 +9,10 @@ export const Hero = () => {
         >
             <div className='flex h-full w-full flex-col items-center justify-center gap-20'>
                 <div className='flex flex-col gap-[18px] text-center'>
-                    <span className='text-5xl font-semibold text-white'>
+                    <span className='text-3xl font-semibold text-white md:text-5xl'>
                         {t('About')}
                     </span>
-                    <p className='text-base font-bold tracking-[.6em] text-blueGray'>
+                    <p className='text-xss font-bold tracking-[.6em] text-blueGray md:text-base'>
                         {t('welcome_to_kerdant').toUpperCase()}
                     </p>
                 </div>

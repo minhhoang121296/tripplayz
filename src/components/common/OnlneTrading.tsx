@@ -4,9 +4,9 @@ export const OnlneTrading = () => {
     const t = useTranslations('')
     return (
         <div className='w-full bg-gradient-to-r from-blue to-black-darkBlack'>
-            <div className='container mx-auto flex w-full flex-col items-start gap-[61px] pb-[42px] pt-[71px] md:flex-row xl:px-[190px]'>
+            <div className='container mx-auto flex w-full flex-col items-start gap-[61px] px-5 pb-[42px] pt-[71px] md:flex-row xl:px-[190px]'>
                 <div className='flex flex-col gap-5 md:w-[525px]'>
-                    <span className='text-4xls font-semibold text-white'>
+                    <span className='text-3xl font-semibold text-white md:text-4xls'>
                         {t('online_trading_platform')}
                     </span>
                     <span className='text-xl text-white'>

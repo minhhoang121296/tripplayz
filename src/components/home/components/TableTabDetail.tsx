@@ -1,12 +1,41 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
+import Sparkline from '@/components/ui/charts/Sparkline'
+import {
+    commodities,
+    crytocurrency,
+    forexdata,
+    indexNumbers,
+    stocks
+} from '@/data'
 import { cn } from '@/lib/utils'
+import { TRADING_TYPE } from '@/types'
 import { useTranslations } from 'next-intl'
 import { useWindowSize } from 'react-use'
 
-export const TableTabDetail = () => {
+interface Iprops {
+    type: TRADING_TYPE
+}
+
+export const TableTabDetail = ({ type }: Iprops) => {
     const t = useTranslations('')
     const { width } = useWindowSize()
+
+    const renderTable = (type: TRADING_TYPE) => {
+        switch (type) {
+            case TRADING_TYPE.FOREX:
+                return forexdata
+            case TRADING_TYPE.CRYPTO:
+                return crytocurrency
+            case TRADING_TYPE.COMMODITIES:
+                return commodities
+            case TRADING_TYPE.ETF:
+                return indexNumbers
+            case TRADING_TYPE.STOCK:
+                return stocks
+            default:
+        }
+    }
 
     return (
         <>
@@ -35,7 +64,7 @@ export const TableTabDetail = () => {
                             <div className='flex-[2] pl-10'>{''}</div>
                         </div>
                         <div className='flex flex-col'>
-                            {[1, 2, 3, 4].map((el, index) => (
+                            {renderTable(type)?.map((el, index) => (
                                 <div
                                     className={cn(
                                         'flex flex-row items-center border-t py-6',
@@ -45,32 +74,33 @@ export const TableTabDetail = () => {
                                 >
                                     <div className='flex flex-[2] flex-row gap-2'>
                                         <Avatar>
-                                            <AvatarImage src='https://github.com/shadcn.png' />
+                                            <AvatarImage src={el.image} />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
                                         <div className='flex flex-col'>
                                             <span className='font-bold'>
-                                                Bitcoin_BTC
+                                                {el.currencyPair}
                                             </span>
-                                            <span className='text-gray-400'>
-                                                BTC
+                                            <span className='text-smxm text-gray-400'>
+                                                {el.currencyPair}
                                             </span>
                                         </div>
                                     </div>
                                     <div className='flex-1 font-medium'>
-                                        {'42.98700'}
+                                        {el.bid}
                                     </div>
                                     <div className='flex-1 font-medium'>
-                                        {'42.98700'}
+                                        {el.ask}
                                     </div>
                                     <div className='flex flex-[2] flex-row items-center gap-3'>
                                         <span className='font-bold text-blue'>
-                                            {'+0.35%'}
+                                            {el.spread}
                                         </span>
-                                        <img
-                                            src='/images/app/Graph.png'
-                                            alt='sparkline'
-                                            className='h-[48px] w-full object-contain'
+                                        <Sparkline
+                                            series={el.series}
+                                            options={el.options}
+                                            width={'100%'}
+                                            height={'48px'}
                                         />
                                     </div>
                                     <div className='flex flex-[2] flex-row gap-2.5 pl-10'>
@@ -112,7 +142,7 @@ export const TableTabDetail = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-3'>
-                        {[1, 2, 3, 4].map((el, index) => (
+                        {renderTable(type)?.map((el, index) => (
                             <div
                                 className={cn(
                                     'flex flex-row rounded-xl bg-white p-5 shadow-sm'
@@ -122,33 +152,34 @@ export const TableTabDetail = () => {
                                 <div className='flex w-full flex-col gap-5'>
                                     <div className='flex flex-[2] flex-row gap-2'>
                                         <Avatar>
-                                            <AvatarImage src='https://github.com/shadcn.png' />
+                                            <AvatarImage src={el.image} />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
                                         <div className='flex flex-col'>
                                             <span className='font-bold'>
-                                                Bitcoin_BTC
+                                                {el.currencyPair}
                                             </span>
-                                            <span className='text-gray-400'>
-                                                BTC
+                                            <span className='text-smxm text-gray-400'>
+                                                {el.currencyPair}
                                             </span>
                                         </div>
                                     </div>
                                     <div className='flex w-full flex-row justify-between'>
                                         <span className=' font-medium'>
-                                            34.323
+                                            {el.bid}
                                         </span>
                                         <span className=' font-medium'>
-                                            34.323
+                                            {el.ask}
                                         </span>
                                         <span className='font-semibold text-blue'>
-                                            34.323
+                                            {el.spread}
                                         </span>
                                     </div>
-                                    <img
-                                        src='/images/app/Graph.png'
-                                        alt='sparkline'
-                                        className='h-12 w-full object-fill'
+                                    <Sparkline
+                                        series={el.series}
+                                        options={el.options}
+                                        width={'100%'}
+                                        height={'48px'}
                                     />
                                     <div className='flex flex-[2] flex-row gap-2'>
                                         <Button

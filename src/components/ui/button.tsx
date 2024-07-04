@@ -24,13 +24,14 @@ const buttonVariants = cva(
                 blackShadow:
                     'bg-black text-white hover:bg-slate-100/80 drop-shadow-[0_5px_20px_rgba(0,0,0,0.25)]',
 
-                whiteOutline: 'bg-white text-slate-900 hover:bg-slate-100/80',
+                whiteOutline:
+                    'bg-white text-black hover:bg-slate-100/80 border border-black',
                 tranparentOutline:
                     'border border-black bg-transparent text-black hover:bg-slate-100 hover:text-slate-900 font-semibold'
             },
             size: {
                 default: 'h-10 px-4 py-2 text-sm',
-                sm: 'h-10 rounded-lg px-6 py-1.5 text-base',
+                sm: 'h-10 rounded-lg px-6 py-2.5 text-base',
                 md: 'h-[52px] rounded-lg px-9 py-4 text-base',
                 iconMedium: 'h-12 w-12 rounded-full p-2'
             }

@@ -1,5 +1,6 @@
 'use client'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { TRADING_TYPE } from '@/types'
 import { useTranslations } from 'next-intl'
 import { TableTabDetail } from './components/TableTabDetail'
 
@@ -42,19 +43,19 @@ export const StockDetail = () => {
                     </TabsTrigger>
                 </TabsList>
                 <TabsContent className='mt-0 xl:px-[134px]' value='forex'>
-                    <TableTabDetail />
+                    <TableTabDetail type={TRADING_TYPE.FOREX} />
                 </TabsContent>
                 <TabsContent className='mt-0 xl:px-[134px]' value='crypto'>
-                    <TableTabDetail />
+                    <TableTabDetail type={TRADING_TYPE.CRYPTO} />
                 </TabsContent>
                 <TabsContent className='mt-0 xl:px-[134px]' value='stocks'>
-                    <TableTabDetail />
+                    <TableTabDetail type={TRADING_TYPE.STOCK} />
                 </TabsContent>
                 <TabsContent className='mt-0 xl:px-[134px]' value='commodities'>
-                    <TableTabDetail />
+                    <TableTabDetail type={TRADING_TYPE.COMMODITIES} />
                 </TabsContent>
                 <TabsContent className='mt-0 xl:px-[134px]' value='etfs'>
-                    <TableTabDetail />
+                    <TableTabDetail type={TRADING_TYPE.ETF} />
                 </TabsContent>
             </Tabs>
             <div className='flex flex-col gap-10 px-5 md:flex-row xl:px-[134px]'>
