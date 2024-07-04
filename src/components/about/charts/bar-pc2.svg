@@ -1,0 +1,47 @@
+<svg width="300" height="410" viewBox="0 0 300 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="filter0_d_5053_1258" x="0" y="0" width="300" height="400" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+            <feOffset />
+            <feGaussianBlur stdDeviation="25" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.333333 0 0 0 0 1 0 0 0 0.5 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5053_1258" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5053_1258" result="shape" />
+        </filter>
+        <filter id="filter1_d_5053_1258" x="10" y="300" width="280" height="110" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+            <feOffset dy="5" />
+            <feGaussianBlur stdDeviation="20" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.333333 0 0 0 0 1 0 0 0 0.35 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5053_1258" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5053_1258" result="shape" />
+        </filter>
+        <linearGradient id="paint0_linear_5053_1258" x1="250" y1="50" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0055FF" />
+            <stop offset="1" stop-color="#3377FF" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_5053_1258" x1="218" y1="36.5" x2="70.3838" y2="70.3791"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" />
+            <stop offset="0.846056" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+    </defs>
+    <g filter="url(#filter0_d_5053_1258)">
+        <rect x="50" y="50" width="200" height="300" fill="#2971FF" />
+    </g>
+    <path
+        d="M249.5 50C249.5 50.794 248.962 51.675 247.673 52.6198C246.398 53.5545 244.485 54.477 241.974 55.3674C236.959 57.1462 229.673 58.7567 220.637 60.1121C202.571 62.8219 177.597 64.5 150 64.5C122.403 64.5 97.4286 62.8219 79.3635 60.1121C70.3271 58.7567 63.0414 57.1462 58.0256 55.3674C55.5147 54.477 53.6023 53.5545 52.3272 52.6198C51.0384 51.675 50.5 50.794 50.5 50C50.5 49.206 51.0384 48.325 52.3272 47.3802C53.6023 46.4455 55.5147 45.523 58.0256 44.6326C63.0414 42.8538 70.3271 41.2433 79.3635 39.8879C97.4286 37.1781 122.403 35.5 150 35.5C177.597 35.5 202.571 37.1781 220.637 39.8879C229.673 41.2433 236.959 42.8538 241.974 44.6326C244.485 45.523 246.398 46.4455 247.673 47.3802C248.962 48.325 249.5 49.206 249.5 50Z"
+        fill="url(#paint0_linear_5053_1258)" stroke="url(#paint1_linear_5053_1258)" />
+    <g filter="url(#filter1_d_5053_1258)">
+        <ellipse cx="150" cy="350" rx="100" ry="15" fill="#0055FF" />
+    </g>
+
+</svg>
