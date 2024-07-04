@@ -18,7 +18,7 @@ export const BarCharDetail = () => {
                 </div>
                 <div className='flex w-full justify-center'>
                     <img
-                        src='/images/app/barChart.png'
+                        src='/images/app/barchart.png'
                         alt='chart'
                         className='h-[564px] w-full object-contain'
                     />
