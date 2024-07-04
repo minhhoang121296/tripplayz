@@ -63,7 +63,7 @@ export const LineChartDetail = () => {
                     <span className='hidden text-4xl font-semibold text-white md:flex'>
                         {t('trading_volume_per_month')}
                     </span>
-                    <div className='flex w-full flex-col px-2'>
+                    <div className='flex w-[620px] flex-col items-center px-2'>
                         <ApexChartRealTime
                             width={width < 768 ? '100%' : 620}
                             height={350}

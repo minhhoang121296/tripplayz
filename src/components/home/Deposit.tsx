@@ -9,6 +9,42 @@ import { Button } from '../ui/button'
 
 export const Deposit = () => {
     const t = useTranslations('')
+
+    const imageV1 = [
+        {
+            src: '/images/credit_card/Mastercard.png',
+            alt: 'barclays'
+        },
+        {
+            src: '/images/credit_card/Santander.png',
+            alt: 'chase'
+        },
+        {
+            src: '/images/credit_card/Skrill_logo.png',
+            alt: 'lloyds-bank-seeklog'
+        },
+        {
+            src: '/images/credit_card/netteller.png',
+            alt: 'ubs-logo'
+        },
+        {
+            src: '/images/credit_card/BBVA_Logo.png',
+            alt: 'hsbc-logo'
+        },
+        {
+            src: '/images/credit_card/Visa_logo.png',
+            alt: 'hsbc-logo'
+        },
+        {
+            src: '/images/credit_card/Frame.png',
+            alt: 'hsbc-logo'
+        },
+        {
+            src: '/images/credit_card/wmtransfer-ar.png',
+            alt: 'hsbc-logo'
+        }
+    ]
+
     return (
         <div className='mdmb-[141px] container mx-auto mb-[101px] flex w-full flex-col gap-[40px] px-5 xl:px-[200px]'>
             <span className='text-3xl font-semibold md:text-4xls'>
@@ -40,11 +76,16 @@ export const Deposit = () => {
                     </div>
                 </div>
                 <div className='hidden flex-1 md:flex'>
-                    <img
-                        src='/images/credit_card/list-card.png'
-                        alt='credit_card'
-                        className='h-[110px] w-full object-contain'
-                    />
+                    <div className='grid grid-cols-4  gap-x-[60px] gap-y-[42px]'>
+                        {imageV1.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image.src}
+                                alt={image.alt}
+                                className='h-[75px] w-full object-contain'
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
