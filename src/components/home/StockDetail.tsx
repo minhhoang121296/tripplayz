@@ -1,70 +1,70 @@
 'use client'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { Button } from '../ui/button'
 import { TableTabDetail } from './components/TableTabDetail'
 
 export const StockDetail = () => {
     const t = useTranslations('')
 
     return (
-        <div className='container mx-auto flex w-full flex-col gap-10 px-5'>
+        <div className='container mx-auto mb-[105px] flex w-full flex-col gap-[34px]'>
             <Tabs defaultValue='forex' className='w-full'>
-                <TabsList className='m-0 flex flex-row overflow-auto'>
+                <TabsList className='m-0 flex flex-row overflow-auto px-5 xl:px-[176px]'>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
                         value='forex'
                     >
-                        Forex
+                        {t('forex')}
                     </TabsTrigger>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
                         value='crypto'
                     >
-                        Crypto
+                        {t('crypto')}
                     </TabsTrigger>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
                         value='stocks'
                     >
-                        Stocks
+                        {t('stocks')}
                     </TabsTrigger>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
                         value='commodities'
                     >
-                        Commodities
+                        {t('commodities')}
                     </TabsTrigger>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-center'
+                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
                         value='etfs'
                     >
-                        ETFs
+                        {t('etfs')}
                     </TabsTrigger>
                 </TabsList>
-                <TabsContent className='mt-0' value='forex'>
+                <TabsContent className='mt-0 xl:px-[134px]' value='forex'>
                     <TableTabDetail />
                 </TabsContent>
-                <TabsContent className='mt-0' value='crypto'>
+                <TabsContent className='mt-0 xl:px-[134px]' value='crypto'>
                     <TableTabDetail />
                 </TabsContent>
-                <TabsContent className='mt-0' value='stocks'>
+                <TabsContent className='mt-0 xl:px-[134px]' value='stocks'>
                     <TableTabDetail />
                 </TabsContent>
-                <TabsContent className='mt-0' value='commodities'>
+                <TabsContent className='mt-0 xl:px-[134px]' value='commodities'>
                     <TableTabDetail />
                 </TabsContent>
-                <TabsContent className='mt-0' value='etfs'>
+                <TabsContent className='mt-0 xl:px-[134px]' value='etfs'>
                     <TableTabDetail />
                 </TabsContent>
             </Tabs>
-            <div className='flex flex-col justify-center gap-10 md:flex-row'>
-                <span>{t('past_performance_disclaimer')}</span>
-                <Button className='gap-2' size={'lg'} variant={'outline'}>
+            <div className='flex flex-col gap-10 px-5 md:flex-row xl:px-[134px]'>
+                <span className='text-xs text-black/75'>
+                    {t('past_performance_disclaimer')}
+                </span>
+                {/* <Button className='gap-2' size={'lg'} variant={'outline'}>
                     <span>{t('see_all_options')}</span>
                     <ArrowRight />
-                </Button>
+                </Button> */}
             </div>
         </div>
     )

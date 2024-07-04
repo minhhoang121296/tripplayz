@@ -1,9 +1,7 @@
 export const routesData = {
     '/': '/',
     '/about': '/about',
-    '/market': '/market',
-    '/trade': '/trade',
-    '/contact': '/contact'
+    '/support': '/support'
 }
 
 export const dataNestedRoute = [
@@ -18,13 +16,8 @@ export const dataNestedRoute = [
         childRoutes: []
     },
     {
-        name: 'Markets',
-        routePath: '/market',
-        childRoutes: []
-    },
-    {
-        name: 'Trade',
-        routePath: '/trade',
+        name: 'Support',
+        routePath: '/support',
         childRoutes: []
     }
 ]

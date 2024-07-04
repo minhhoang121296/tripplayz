@@ -47,11 +47,11 @@ export const Liquidity = () => {
     ]
 
     return (
-        <div className='container mx-auto flex w-full flex-col gap-6 px-5 md:gap-[60px]'>
-            <span className='text-3xl font-semibold md:text-4xlm'>
+        <div className='container mx-auto flex w-full flex-col gap-6 px-5 md:mb-[443px] md:gap-[60px] xl:px-[200px]'>
+            <span className='md:text-4xls text-3xl font-semibold'>
                 {t('Liquidity_Providers')}
             </span>
-            <div className='grid grid-cols-2 gap-10 md:grid-cols-5'>
+            {/* <div className='grid grid-cols-2 gap-10 md:grid-cols-5'>
                 {images.map((image, index) => (
                     <img
                         key={index}
@@ -60,7 +60,7 @@ export const Liquidity = () => {
                         className='h-[75px] w-full object-contain'
                     />
                 ))}
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -18,7 +18,7 @@ export const QuickContactButton = ({ locale }: IProps) => {
     const t = useTranslations('')
 
     return (
-        <Link lang={locale} href='/contact'>
+        <Link lang={locale} href='/support'>
             <div className='fixed bottom-5 right-5'>
                 <TooltipProvider>
                     <Tooltip>

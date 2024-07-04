@@ -5,31 +5,33 @@ import * as React from 'react'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-    'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300',
+    'inline-flex gap-2.5 items-center justify-center whitespace-nowrap rounded-md font-semibold ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-25',
     {
         variants: {
             variant: {
-                default:
-                    'bg-slate-900 text-slate-50 hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90',
-                destructive:
-                    'bg-magenta-500 text-slate-50 hover:bg-magenta-500/90 dark:bg-magenta-900 dark:text-slate-50 dark:hover:bg-magenta-900/90',
-                primary:
-                    'bg-blue text-slate-50 hover:bg-blue/90 dark:bg-blue-900 dark:text-slate-50 dark:hover:bg-blue-900/90',
-                outline:
-                    'border border-black bg-white hover:bg-slate-100 hover:text-slate-900 font-semibold',
-                outlineBlue:
+                default: 'bg-slate-900 text-slate-50 hover:bg-slate-900/90 ',
+                primary: 'bg-blue text-white hover:bg-blue/90 ',
+                primaryShadow:
+                    'bg-blue text-white hover:bg-blue/90  drop-shadow-[0_5px_20px_rgba(0,85,255,0.25)]',
+                primaryOutline:
                     'border border-blue bg-white text-blue hover:bg-blue-100 hover:text-blue-900',
-                outlineRed:
+
+                secondary: 'bg-magenta text-slate-900 hover:bg-slate-100/80',
+                secondaryOutline:
                     'border border-magenta bg-white text-magenta hover:bg-magenta-100 hover:text-magenta-900',
-                secondary:
-                    'bg-slate-100 text-slate-900 hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80',
-                ghost: 'hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50',
-                link: 'text-slate-900 underline-offset-4 hover:underline dark:text-slate-50'
+
+                black: 'bg-black text-white hover:bg-slate-100/80',
+                blackShadow:
+                    'bg-black text-white hover:bg-slate-100/80 drop-shadow-[0_5px_20px_rgba(0,0,0,0.25)]',
+
+                whiteOutline: 'bg-white text-slate-900 hover:bg-slate-100/80',
+                tranparentOutline:
+                    'border border-black bg-transparent text-black hover:bg-slate-100 hover:text-slate-900 font-semibold'
             },
             size: {
-                default: 'h-10 px-4 py-2',
-                sm: 'h-9 rounded-md px-3',
-                lg: 'h-11 rounded-md px-8',
+                default: 'h-10 px-4 py-2 text-sm',
+                sm: 'h-10 rounded-lg px-6 py-1.5 text-base',
+                md: 'h-[52px] rounded-lg px-9 py-4 text-base',
                 iconMedium: 'h-12 w-12 rounded-full p-2'
             }
         },
