@@ -60,15 +60,18 @@ export function InputForm() {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className=' space-y-6'>
-                <div className='block w-full md:flex md:flex-row md:gap-2'>
+                <div className='block w-full md:flex md:flex-row md:gap-4'>
                     <FormField
                         control={form.control}
                         name='name'
                         render={({ field }) => (
-                            <FormItem className='w-full'>
-                                <FormLabel>{t('name')}</FormLabel>
+                            <FormItem className='flex w-full flex-col p-1.5'>
+                                <FormLabel className='text-smxm font-medium'>
+                                    {t('name')}
+                                </FormLabel>
                                 <FormControl>
                                     <Input
+                                        className='text-base'
                                         placeholder={t('your_name')}
                                         {...field}
                                     />
@@ -81,10 +84,13 @@ export function InputForm() {
                         control={form.control}
                         name='lastname'
                         render={({ field }) => (
-                            <FormItem className='w-full'>
-                                <FormLabel>{t('lastname')}</FormLabel>
+                            <FormItem className='flex w-full flex-col p-1.5'>
+                                <FormLabel className='text-smxm font-medium'>
+                                    {t('lastname')}
+                                </FormLabel>
                                 <FormControl>
                                     <Input
+                                        className='text-base'
                                         placeholder={t('your_lastname')}
                                         {...field}
                                     />
@@ -98,10 +104,13 @@ export function InputForm() {
                     control={form.control}
                     name='Email'
                     render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>{t('Email')}</FormLabel>
+                        <FormItem className='flex flex-col p-1.5'>
+                            <FormLabel className='text-smxm font-medium'>
+                                {t('Email')}
+                            </FormLabel>
                             <FormControl>
                                 <Input
+                                    className='text-base'
                                     placeholder={t('email_example')}
                                     {...field}
                                 />
@@ -114,8 +123,10 @@ export function InputForm() {
                     control={form.control}
                     name='message'
                     render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>{t('message')}</FormLabel>
+                        <FormItem className='flex flex-col p-1.5'>
+                            <FormLabel className='text-smxm font-medium'>
+                                {t('message')}
+                            </FormLabel>
                             <FormControl>
                                 <Textarea
                                     placeholder={t('type_your_message')}
@@ -126,15 +137,17 @@ export function InputForm() {
                         </FormItem>
                     )}
                 />
-                <Button
-                    size={'lg'}
-                    className='w-full gap-2'
-                    variant={'primary'}
-                    type='submit'
-                >
-                    <ArrowRight />
-                    {t('send')}
-                </Button>
+                <div className='flex w-full flex-row justify-end'>
+                    <Button
+                        size={'md'}
+                        className=' w-full md:w-auto'
+                        variant={'primaryShadow'}
+                        type='submit'
+                    >
+                        <ArrowRight />
+                        {t('send')}
+                    </Button>
+                </div>
             </form>
         </Form>
     )

@@ -39,12 +39,12 @@ export const Header: FC<Props> = ({ locale }) => {
     return (
         <div
             className={cn(
-                'fixed top-0 z-50 flex w-full flex-col',
+                'fixed top-0 z-50 flex w-full flex-col border-b border-[#818181]',
                 pathname == '/' ? 'backdrop-blur-lg' : 'bg-white-lightWhite'
             )}
         >
-            <div className='container mx-auto  flex h-[60px] w-full flex-row items-center justify-between bg-transparent  px-2 py-5'>
-                <div className='flex flex-row items-center gap-10'>
+            <div className='mx-auto flex h-[100px] w-full flex-row items-center justify-between bg-transparent px-2 py-5 lg:container md:px-10'>
+                <div className='flex flex-row items-center md:gap-[82px]'>
                     <Link lang={locale} href='/'>
                         <div className='flex flex-row items-center'>
                             <Image
@@ -59,7 +59,7 @@ export const Header: FC<Props> = ({ locale }) => {
                             />
                         </div>
                     </Link>
-                    <div className=' hidden flex-row items-center gap-3 md:flex'>
+                    <div className=' hidden flex-row items-center gap-[42px] md:flex'>
                         {dataNestedRoute?.map((item, index) => (
                             <Link
                                 key={index}
@@ -81,7 +81,7 @@ export const Header: FC<Props> = ({ locale }) => {
                         ))}
                     </div>
                 </div>
-                <div className='flex flex-row items-center gap-4'>
+                <div className='flex flex-row items-center gap-10'>
                     <DropdownMenu>
                         <DropdownMenuTrigger>
                             <button
@@ -125,11 +125,11 @@ export const Header: FC<Props> = ({ locale }) => {
                         )}
                     </button>
 
-                    <div className='hidden flex-row gap-2 md:flex'>
-                        <Button size={'lg'} variant={'outline'}>
+                    <div className='hidden flex-row gap-5 md:flex'>
+                        <Button size={'sm'} variant={'whiteOutline'}>
                             {t('login')}
                         </Button>
-                        <Button size={'lg'} variant={'primary'}>
+                        <Button size={'sm'} variant={'primaryShadow'}>
                             {t('register')}
                         </Button>
                     </div>

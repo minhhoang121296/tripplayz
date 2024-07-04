@@ -8,46 +8,50 @@ export const Ambassadors = () => {
     const { width } = useWindowSize()
 
     return (
-        <div className='container mx-auto flex w-full flex-col gap-[219px] px-5 py-[44px]  md:gap-[133px] md:py-[94px]'>
+        <div className='container mx-auto flex w-full flex-col gap-[219px] px-5 py-[44px]  md:gap-[133px] md:pb-[133px] md:pt-[100px] xl:px-[188px]'>
             <div className='flex w-full flex-col gap-[30px] text-center md:gap-[64px]'>
                 <div className='flex w-full flex-col items-center justify-center gap-[30px] text-center'>
-                    <p className='text-3xl font-semibold md:text-4xl'>
-                        Title Section Delirium
+                    <p className='md:text-4xls text-3xl font-semibold'>
+                        {t('accounts_registered')}
                     </p>
-                    <span className='md:w-1/2'>
-                        Nam libero tempore, cum soluta nobis est eligendi optio
-                        cumque nihil impedit quo minus id quod.
+                    <span className='text-basem md:w-[430px]'>
+                        {t('active_users_growth')}
                     </span>
                 </div>
-                <div className='flex flex-col justify-center gap-[30px] md:flex-row md:justify-between'>
-                    <div className='flex flex-col gap-4 text-center'>
-                        <span className='font-semibold'>2012</span>
+                <div className='flex flex-col justify-center gap-[30px] md:flex-row md:gap-[60px]'>
+                    <div className='flex flex-col gap-5 text-center'>
+                        <span className='text-lg font-semibold'>
+                            {t('may')}
+                        </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            $134 580
+                            134 580
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>
-                    <div className='flex flex-col gap-4 text-center'>
-                        <span className='font-semibold'>2018</span>
+                    <div className='flex flex-col gap-5 text-center'>
+                        <span className='text-lg font-semibold'>
+                            {t('june')}
+                        </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            $6 827 280
+                            6 827 280
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>
-                    <div className='flex flex-col gap-4 text-center'>
-                        <span className='font-semibold'>2023</span>
+                    <div className='flex flex-col gap-5 text-center'>
+                        <span className='text-lg font-semibold'>
+                            {t('muly')}
+                        </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_30px_40px_#0055FF80]'>
-                            $20 375 097
+                            20 375 097
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>
                 </div>
             </div>
             <div className='relative flex flex-col  items-center justify-center rounded-xl bg-white px-5 py-[80px] text-2xl font-semibold md:py-[44px]'>
-                <span className='text-center'>
+                <span className='text-center text-2xl font-semibold'>
                     {t('ambassadors_worldwide')}
                 </span>
-                md:-top-5 md:right-20
                 <img
                     src='/images/app/china.png'
                     alt='ambassador'

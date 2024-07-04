@@ -8,24 +8,32 @@ export const Hero = () => {
 
     return (
         <div
-            className={` flex h-[810px] flex-col bg-[url('/images/app/hero.png')] bg-cover bg-center`}
+            className={` mb-[92px] flex h-[810px] flex-col bg-black/35 bg-cover bg-center`}
         >
-            <div className='h-[60px] flex-none'></div>
-            <div className='flex h-full w-full flex-col items-center justify-center gap-20'>
-                <div className='flex flex-col gap-5 text-center'>
-                    <p className='text-sm font-semibold tracking-[0.5em] text-white'>
+            <div className='h-[100px] flex-none'></div>
+            <div className='flex h-full w-full flex-col items-center justify-center gap-[39px]'>
+                <div className='flex flex-col gap-[39px] text-center'>
+                    <p className='text-base font-extrabold tracking-[0.5em] text-white'>
                         {t('welcome_to_kerdant').toUpperCase()}
                     </p>
-                    <span className='text-3xl font-bold text-white'>
-                        {t('instant_withdrawals_no_waiting').toUpperCase()}
-                    </span>
+                    <div className='flex flex-col'>
+                        <span className='text-5xl font-bold text-white'>
+                            {t('no_spreads').toUpperCase()}
+                        </span>
+                        <span className='text-5xl font-bold text-white'>
+                            {t('instant_withdrawals').toUpperCase()}
+                        </span>
+                        <span className='text-5xl font-bold text-white'>
+                            {t('no_waiting').toUpperCase()}
+                        </span>
+                    </div>
                 </div>
 
-                <div className='flex flex-col gap-3 md:flex-row'>
-                    <Button size={'lg'} variant={'outline'}>
+                <div className='flex flex-col gap-[19px] md:flex-row'>
+                    <Button size={'md'} variant={'whiteOutline'}>
                         {t('free_practice_account')}
                     </Button>
-                    <Button className='gap-2' size={'lg'} variant={'primary'}>
+                    <Button size={'md'} variant={'primaryShadow'}>
                         <IconBase
                             icon='candle'
                             color={Colors.white}

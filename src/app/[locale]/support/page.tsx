@@ -7,8 +7,8 @@ import { useTranslations } from 'next-intl'
 export default function Contact() {
     const t = useTranslations('')
     return (
-        <div className='bg-white-lightWhite flex w-full flex-col'>
-            <div className='h-[60px]'></div>
+        <div className='flex w-full flex-col bg-white-lightWhite'>
+            <div className='h-[100px]'></div>
             <SendForm />
             <InforToContact />
             <div className='container mx-auto flex flex-col gap-4 px-5 pb-10 text-sm md:hidden'>

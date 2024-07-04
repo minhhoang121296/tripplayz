@@ -7,23 +7,22 @@ import { useWindowSize } from 'react-use'
 export const TableTabDetail = () => {
     const t = useTranslations('')
     const { width } = useWindowSize()
-    console.log(width, 'width')
 
     return (
         <>
             {width > 1024 && (
-                <div className='flex w-full flex-col gap-10 rounded-lg bg-white  px-10 py-9 shadow-md'>
+                <div className='flex w-full flex-col gap-10 rounded-lg bg-white  p-10 shadow-md'>
                     <div className='flex flex-row justify-between'>
-                        <div className='tiem-center gap-2s flex flex-row gap-2'>
-                            <span className='font-bold'>220</span>
+                        <div className='flex flex-row items-end gap-2'>
+                            <span className='text-2xl font-bold'>220</span>
                             <span className=''>{t('stocks_cfd')}</span>
                         </div>
-                        <div className='tiem-center gap-2s flex flex-row gap-2'>
-                            <span className='font-bold'>220</span>
+                        <div className='flex flex-row items-end gap-2'>
+                            <span className='text-2xl font-bold'>220</span>
                             <span className=''>{t('leverages_up_to')}</span>
                         </div>
-                        <div className='tiem-center gap-2s flex flex-row gap-2'>
-                            <span className='font-bold'>220</span>
+                        <div className='flex flex-row items-end gap-2'>
+                            <span className='text-2xl font-bold'>220</span>
                             <span className=''>{t('minimum_investment')}</span>
                         </div>
                     </div>
@@ -71,21 +70,21 @@ export const TableTabDetail = () => {
                                         <img
                                             src='/images/app/Graph.png'
                                             alt='sparkline'
-                                            className='h-full w-full object-contain'
+                                            className='h-[48px] w-full object-contain'
                                         />
                                     </div>
-                                    <div className='flex flex-[2] flex-row gap-2 pl-10'>
+                                    <div className='flex flex-[2] flex-row gap-2.5 pl-10'>
                                         <Button
-                                            size={'lg'}
+                                            size={'md'}
                                             className='w-full'
-                                            variant={'outlineRed'}
+                                            variant={'secondaryOutline'}
                                         >
                                             {t('Sell')}
                                         </Button>
                                         <Button
-                                            size={'lg'}
+                                            size={'md'}
                                             className='w-full'
-                                            variant={'outlineBlue'}
+                                            variant={'primaryOutline'}
                                         >
                                             {t('Buy')}
                                         </Button>
@@ -153,16 +152,16 @@ export const TableTabDetail = () => {
                                     />
                                     <div className='flex flex-[2] flex-row gap-2'>
                                         <Button
-                                            size={'lg'}
+                                            size={'md'}
                                             className='w-full'
-                                            variant={'outlineRed'}
+                                            variant={'secondaryOutline'}
                                         >
                                             {t('Sell')}
                                         </Button>
                                         <Button
-                                            size={'lg'}
+                                            size={'md'}
                                             className='w-full'
-                                            variant={'outlineBlue'}
+                                            variant={'primaryOutline'}
                                         >
                                             {t('Buy')}
                                         </Button>

@@ -13,7 +13,7 @@ export default function HomePage() {
     return (
         <div className='flex w-full flex-col'>
             <div
-                className={`flex w-full flex-col gap-[60px] bg-white-lightWhite bg-[url('/images/app/grid6.png')]  md:gap-[130px]`}
+                className={`flex w-full flex-col bg-white-lightWhite bg-[url('/images/app/grid6.png')]`}
             >
                 <Hero />
                 <StockDetail />
