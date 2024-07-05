@@ -9,7 +9,7 @@ export const Support = () => {
 
     return (
         <div className='container mx-auto mb-[204px] flex w-full flex-col gap-[30px]  md:gap-[51px] xl:px-[135px]'>
-            <div className='flex w-full flex-col gap-[50px] rounded-2xl bg-white px-5 py-[45px] shadow-sm md:flex-row md:px-[100px]'>
+            <div className='flex w-full flex-col gap-[50px] rounded-2xl bg-white px-[15px] py-[45px] shadow-sm md:flex-row md:px-[100px]'>
                 <div className='flex h-full w-full flex-col items-center gap-[23px] text-center'>
                     <div className='h-[120px] w-[120px] rounded-full bg-blue-100 p-4'>
                         <div className='flex h-full w-full items-center justify-center rounded-full bg-blue'>
@@ -60,7 +60,7 @@ export const Support = () => {
                     <span className='text-basem'>{t('prompt_support')}</span>
                 </div>
             </div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center px-5'>
                 <Button
                     className='w-full md:w-auto'
                     variant={'primaryShadow'}

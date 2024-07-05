@@ -1,6 +1,6 @@
 'use client'
 import { formatNumber } from '@/helpers'
-import { useRandomFluctuation } from '@/hook/randomNumber'
+import { useIncrementalFluctuation } from '@/hook/randomNumber'
 
 interface IProps {
     initialValue: number
@@ -13,7 +13,7 @@ export const StockMarketSimulator = ({
     fluctuationRange,
     intervalMs
 }: IProps) => {
-    const stockValue = useRandomFluctuation({
+    const stockValue = useIncrementalFluctuation({
         initialValue,
         fluctuationRange,
         intervalMs

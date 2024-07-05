@@ -6,7 +6,7 @@ interface Iprops {
     intervalMs: number
 }
 
-export const useRandomFluctuation = ({
+export const useIncrementalFluctuation = ({
     initialValue,
     fluctuationRange,
     intervalMs
@@ -15,10 +15,8 @@ export const useRandomFluctuation = ({
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const randomDelta =
-                Math.floor(Math.random() * (fluctuationRange * 2)) -
-                fluctuationRange
-            setValue(prevValue => Math.max(0, prevValue + randomDelta)) // Ensure value is not less than 0
+            const randomIncrement = 1
+            setValue(prevValue => prevValue + randomIncrement)
         }, intervalMs)
 
         return () => clearInterval(interval)
