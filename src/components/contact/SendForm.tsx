@@ -7,8 +7,8 @@ export const SendForm = () => {
     const t = useTranslations('')
 
     return (
-        <div className='v container mx-auto flex w-full flex-col gap-6  py-6 md:mt-[53px] md:gap-[60px] md:pb-[115px] xl:px-[175px]'>
-            <span className='text-center text-3xl font-semibold md:text-left md:text-4xls'>
+        <div className='v container mx-auto flex w-full flex-col gap-6  py-6 md:py-0 md:mt-[53px] md:gap-[60px] md:pb-[115px] xl:px-[175px]'>
+            <span className='text-center text-3xl font-semibold md:text-left md:text-5xl'>
                 {t('Contact_us')}
             </span>
             <div className='flex flex-col gap-10 md:flex-row'>

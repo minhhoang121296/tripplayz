@@ -38,7 +38,7 @@ export const Enjoy = () => {
                     <span className='text-2xl font-bold text-blue'>
                         {t('available')}
                     </span>
-                    <div className='mt-[50px] grid grid-cols-2 gap-[37px] md:gap-5'>
+                    <div className='mt-[50px] grid grid-cols-2 gap-[37px] md:gap-x-[37px] md:gap-y-[50px]'>
                         <div className='flex flex-row items-center gap-2'>
                             <IconBase icon='googlepaly' size={36} />
                             <span className='text-base font-medium'>

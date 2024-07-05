@@ -18,7 +18,7 @@ export const ChatTime = () => {
                             {t('chat')}
                         </div>
                         <div className='flex flex-col '>
-                            <div className='flex flex-row border-y border-gray/50 py-[22px] text-white'>
+                            <div className='flex flex-row border-y border-[#949494]/50 py-[22px] text-white'>
                                 <span className='font-lightmd:text-lg  flex-1 font-semibold'>
                                     {t('may')}
                                 </span>
@@ -29,7 +29,7 @@ export const ChatTime = () => {
                                     {t('muly')}
                                 </span>
                             </div>
-                            <div className='flex flex-row border-b border-gray/50 pb-6 pt-1'>
+                            <div className='flex flex-row border-b border-[#949494]/50 pb-6 pt-1'>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-7xl'>
                                         <StockMarketSimulator
@@ -77,7 +77,7 @@ export const ChatTime = () => {
                             {t('Email')}
                         </div>
                         <div className='flex flex-col '>
-                            <div className='flex flex-row border-y border-gray/50 py-[22px] text-white'>
+                            <div className='flex flex-row border-y border-[#949494]/50 py-[22px] text-white'>
                                 <span className='flex-1 text-lg font-light md:font-semibold'>
                                     {t('may')}
                                 </span>
@@ -88,7 +88,7 @@ export const ChatTime = () => {
                                     {t('muly')}
                                 </span>
                             </div>
-                            <div className='flex flex-row border-b border-gray/50 pb-6 pt-1 '>
+                            <div className='flex flex-row border-b border-[#949494]/50 pb-6 pt-1 '>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blueGray drop-shadow-[0_4px_40px_#A5BAE480] md:text-7xl'>
                                         <StockMarketSimulator
