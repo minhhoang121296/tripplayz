@@ -25,7 +25,7 @@ export const Ambassadors = () => {
                             {t('may')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]  text-center'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={134500} targetNumber={134580} />
+                            <AnimatedNumberOnScroll duration={3000} startNumber={134560} targetNumber={134580} />
 
                         </span>
                         <p className='text-lg  text-center'>{t('per_month')}</p>
@@ -35,7 +35,7 @@ export const Ambassadors = () => {
                             {t('june')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={6827200} targetNumber={6827280} />
+                            <AnimatedNumberOnScroll duration={3000} startNumber={6827250} targetNumber={6827280} />
                             
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
@@ -45,7 +45,7 @@ export const Ambassadors = () => {
                             {t('muly')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_30px_40px_#0055FF80]'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={20375000} targetNumber={20375097} />
+                            <AnimatedNumberOnScroll duration={3000} startNumber={20375087} targetNumber={20375097} />
                             
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>

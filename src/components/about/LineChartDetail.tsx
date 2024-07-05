@@ -27,18 +27,18 @@ export const LineChartDetail = () => {
                             <AnimatedNumberOnScroll duration={3000} startNumber={14000} targetNumber={14150} />
                             </p>
                             <div className='flex break-keep text-6xl font-light text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                                <AnimatedNumberOnScroll duration={3000} startNumber={14000} targetNumber={14150} />
+                                <AnimatedNumberOnScroll duration={3000} startNumber={14130} targetNumber={14150} />
                                 
                             </div>
                         </div>
                         <div className='w-full border-b border-gray-lightGray'></div>
                         <div className='flex flex-none flex-col text-left'>
                             <p className='text-2xl text-white'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={23400} targetNumber={23456} />
+                            <AnimatedNumberOnScroll duration={3000} startNumber={23436} targetNumber={23456} />
                                 
                             </p>
                             <div className='flex text-6xl font-light text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                                <AnimatedNumberOnScroll duration={3000} startNumber={23400} targetNumber={23456} />
+                                <AnimatedNumberOnScroll duration={3000} startNumber={23436} targetNumber={23456} />
 
                             </div>
                         </div>
