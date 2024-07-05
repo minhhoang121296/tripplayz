@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import NumberAnimation from '../custom/NumberAnimation'
+import AnimatedNumberOnScroll from '../ui/AnimatedNumberOnScroll'
 
 export const SummerizeInfor = () => {
     const t = useTranslations('')
@@ -18,7 +18,11 @@ export const SummerizeInfor = () => {
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
                     <div className=' flex justify-center text-7xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
                         {'+'}
-                        <NumberAnimation targetNumber={5} duration={3000} />
+                        <AnimatedNumberOnScroll
+                            duration={3000}
+                            startNumber={0}
+                            targetNumber={5}
+                        />
                     </div>
                     <p className='text-lg font-semibold'>
                         {t('support_members')}
@@ -27,8 +31,11 @@ export const SummerizeInfor = () => {
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
                     <div className=' flex justify-center text-7xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
                         {'+'}
-
-                        <NumberAnimation targetNumber={39} duration={3000} />
+                        <AnimatedNumberOnScroll
+                            duration={3000}
+                            startNumber={0}
+                            targetNumber={39}
+                        />
                     </div>
                     <p className='text-lg font-semibold'>
                         {t('support_members')}
@@ -37,7 +44,11 @@ export const SummerizeInfor = () => {
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
                     <div className='flex justify-center text-7xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
                         {'+'}
-                        <NumberAnimation targetNumber={79} duration={3000} />
+                        <AnimatedNumberOnScroll
+                            duration={3000}
+                            startNumber={0}
+                            targetNumber={79}
+                        />
                     </div>
                     <p className='text-lg font-semibold'>
                         {t('support_members')}

@@ -1,6 +1,7 @@
+'use client'
+
 import { useTranslations } from 'next-intl'
-import NumberAnimation from '../custom/NumberAnimation'
-import { StockMarketSimulator } from '../custom/StockValue'
+import AnimatedNumberOnScroll from '../ui/AnimatedNumberOnScroll'
 
 export const ChatTime = () => {
     const t = useTranslations('')
@@ -33,10 +34,10 @@ export const ChatTime = () => {
                             <div className='flex flex-row border-b border-[#949494]/50 pb-6 pt-1'>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-7xl'>
-                                        <StockMarketSimulator
-                                            initialValue={2}
-                                            fluctuationRange={10}
-                                            intervalMs={2000}
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={2}
                                         />
                                     </span>
                                     <span className='text-lg text-white'>
@@ -45,10 +46,10 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-7xl'>
-                                        <StockMarketSimulator
-                                            initialValue={48}
-                                            fluctuationRange={10}
-                                            intervalMs={2000}
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={48}
                                         />
                                     </span>
                                     <span className='text-lg text-white'>
@@ -57,10 +58,10 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-7xl'>
-                                        <StockMarketSimulator
-                                            initialValue={60}
-                                            fluctuationRange={10}
-                                            intervalMs={2000}
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={60}
                                         />
                                     </span>
                                     <span className='text-lg text-white'>
@@ -92,10 +93,10 @@ export const ChatTime = () => {
                             <div className='flex flex-row border-b border-[#949494]/50 pb-6 pt-1 '>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blueGray drop-shadow-[0_4px_40px_#A5BAE480] md:text-7xl'>
-                                        <StockMarketSimulator
-                                            initialValue={2}
-                                            fluctuationRange={10}
-                                            intervalMs={2000}
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={2}
                                         />
                                     </span>
                                     <span className='text-lg text-white'>
@@ -104,9 +105,10 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blueGray drop-shadow-[0_4px_40px_#A5BAE480] md:text-7xl'>
-                                        <NumberAnimation
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
                                             targetNumber={48}
-                                            duration={3000}
                                         />
                                     </span>
                                     <span className='text-lg text-white'>
@@ -115,14 +117,10 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blueGray drop-shadow-[0_4px_40px_#A5BAE480] md:text-7xl'>
-                                        <StockMarketSimulator
-                                            initialValue={60}
-                                            fluctuationRange={10}
-                                            intervalMs={2000}
-                                        />
-                                        <NumberAnimation
-                                            targetNumber={60}
+                                        <AnimatedNumberOnScroll
                                             duration={3000}
+                                            startNumber={0}
+                                            targetNumber={60}
                                         />
                                     </span>
                                     <span className='text-lg text-white'>

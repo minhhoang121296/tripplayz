@@ -4,7 +4,6 @@ import { motion, useAnimation } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { useInView } from 'react-intersection-observer'
 import { useWindowSize } from 'react-use'
-import NumberAnimation from '../custom/NumberAnimation'
 
 export const BarCharDetail = () => {
     const t = useTranslations('')
@@ -34,11 +33,7 @@ export const BarCharDetail = () => {
                     <div>
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
-                                {'$'}
-                                <NumberAnimation
-                                    targetNumber={100}
-                                    duration={3000}
-                                />
+                                {'$ XX'}
                             </div>
                             <span className='text-smxm md:text-lg'>
                                 {t('per_month')}
@@ -64,11 +59,7 @@ export const BarCharDetail = () => {
                     <div>
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
-                                {'$'}
-                                <NumberAnimation
-                                    targetNumber={200}
-                                    duration={3000}
-                                />
+                                {'$ XX'}
                             </div>
                             <span className='text-smxm md:text-lg'>
                                 {t('per_month')}
@@ -94,11 +85,7 @@ export const BarCharDetail = () => {
                     <div>
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
-                                {'$'}
-                                <NumberAnimation
-                                    targetNumber={300}
-                                    duration={3000}
-                                />
+                                {'$XX'}
                             </div>
                             <span className='text-smxm md:text-lg'>
                                 {t('per_month')}
