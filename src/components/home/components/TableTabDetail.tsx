@@ -189,7 +189,7 @@ export const TableTabDetail = ({ type }: Iprops) => {
             )}
             {width < 1024 && (
                 <div className='flex w-full flex-col gap-10 rounded-lg'>
-                    <div className='flex flex-row flex-wrap gap-2 py-5 '>
+                    <div className='flex flex-row flex-wrap gap-2 px-5 py-5 '>
                         <div className='flex flex-row items-center gap-2'>
                             <span className='font-bold'>{curenheader.cfd}</span>
                             <span className=''>
