@@ -7,12 +7,14 @@ import { useTranslations } from 'next-intl'
 export default function Contact() {
     const t = useTranslations('')
     return (
-        <div className={`flex w-full flex-col bg-white-lightWhite bg-[url('/images/app/grid6.png')]`}>
+        <div
+            className={`flex w-full flex-col bg-white-lightWhite md:bg-[url('/images/app/grid6.png')]`}
+        >
             <div className='h-[60px] md:h-[100px]'></div>
             <SendForm />
             <InforToContact />
             <div className='container mx-auto flex flex-col gap-[22px] px-5 pb-10 text-sm md:hidden md:gap-4'>
-                <span className='text-basem font-bold'>{t('follow_us')}:</span>
+                <span className='text-basem font-bold'>{t('follow_us')} </span>
                 <div className='flex flex-row items-center gap-5'>
                     <a
                         href='https://www.facebook.com/kerdantofficial'

@@ -27,6 +27,7 @@ export const Header: FC<Props> = ({ locale }) => {
     const { width, height } = useWindowSize()
     const [activeKey, setActiveKey] = useState(undefined)
     const [activeMenu, setActiveMenu] = useState(false)
+    const [isScrolled, setIsScrolled] = useState(false)
     const t = useTranslations('')
 
     useEffect(() => {
@@ -36,11 +37,40 @@ export const Header: FC<Props> = ({ locale }) => {
         return () => {}
     }, [width])
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (pathname == '/' && window.scrollY > 810) {
+                setIsScrolled(true)
+            } else {
+                setIsScrolled(false)
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
+    const returnImage = () => {
+        if (pathname == '/' && !isScrolled) {
+            return '/images/app/logo-white.png'
+        }
+        if (pathname == '/' && isScrolled) {
+            return '/images/app/logo-black.png'
+        }
+        if (pathname != '/') {
+            return '/images/app/logo-black.png'
+        }
+        return '/images/app/logo-white.png'
+    }
+
     return (
         <div
             className={cn(
                 'header z-50 flex w-full flex-col border-[#818181] md:border-b',
-                pathname == '/' ? 'backdrop-blur-lg' : 'bg-white-lightWhite'
+                pathname == '/' ? 'backdrop-blur-lg' : 'bg-white-lightWhite',
+                isScrolled ? 'bg-white-lightWhite' : 'backdrop-blur-lg'
             )}
         >
             <div className='mx-auto flex h-[60px] w-full flex-row items-center justify-between bg-transparent px-2.5 py-5 lg:container md:h-[100px] md:px-10'>
@@ -48,11 +78,7 @@ export const Header: FC<Props> = ({ locale }) => {
                     <Link lang={locale} href='/'>
                         <div className='flex flex-row items-center'>
                             <Image
-                                src={
-                                    pathname == '/'
-                                        ? '/images/app/logo-black.png'
-                                        : '/images/app/logo-black.png'
-                                }
+                                src={returnImage()}
                                 width={108}
                                 height={20}
                                 alt='logo'
@@ -61,23 +87,43 @@ export const Header: FC<Props> = ({ locale }) => {
                     </Link>
                     <div className=' hidden flex-row items-center gap-[42px] md:flex'>
                         {dataNestedRoute?.map((item, index) => (
-                            <Link
-                                key={index}
-                                lang={locale}
-                                href={item.routePath as any}
-                                className={cn(
-                                    'flex flex-row items-center font-medium',
-                                    pathname == `${item.routePath}`
-                                        ? 'font-bold'
-                                        : '',
-                                    pathname != `/` &&
-                                        pathname == `${item.routePath}`
-                                        ? 'text-blue'
-                                        : 'text-black'
+                            <>
+                                {pathname != `/` ? (
+                                    <Link
+                                        key={index}
+                                        lang={locale}
+                                        href={item.routePath as any}
+                                        className={cn(
+                                            'flex flex-row items-center font-medium ',
+                                            pathname == `${item.routePath}`
+                                                ? 'font-bold'
+                                                : '',
+                                            pathname == `${item.routePath}`
+                                                ? 'text-blue'
+                                                : 'text-black'
+                                        )}
+                                    >
+                                        {t(item.name)}
+                                    </Link>
+                                ) : (
+                                    <Link
+                                        key={index}
+                                        lang={locale}
+                                        href={item.routePath as any}
+                                        className={cn(
+                                            'flex flex-row items-center font-medium ',
+                                            pathname == `${item.routePath}`
+                                                ? 'font-bold'
+                                                : '',
+                                            isScrolled
+                                                ? 'text-black'
+                                                : 'text-white'
+                                        )}
+                                    >
+                                        {t(item.name)}
+                                    </Link>
                                 )}
-                            >
-                                {t(item.name)}
-                            </Link>
+                            </>
                         ))}
                     </div>
                 </div>
@@ -94,7 +140,21 @@ export const Header: FC<Props> = ({ locale }) => {
                                     height={24}
                                     alt='eth'
                                 />
-                                <Icon path={mdiMenuDown} size={1} />
+                                <>
+                                    {pathname == '/' ? (
+                                        <Icon
+                                            path={mdiMenuDown}
+                                            color={
+                                                isScrolled
+                                                    ? Colors.black['DEFAULT']
+                                                    : Colors.white
+                                            }
+                                            size={1}
+                                        />
+                                    ) : (
+                                        <Icon path={mdiMenuDown} size={1} />
+                                    )}
+                                </>
                             </button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent></DropdownMenuContent>
@@ -107,15 +167,25 @@ export const Header: FC<Props> = ({ locale }) => {
                         }}
                     >
                         {!activeMenu ? (
-                            <IconBase
-                                icon='menu'
-                                size={24}
-                                color={
-                                    pathname == '/'
-                                        ? Colors.black['DEFAULT']
-                                        : Colors.blue['DEFAULT']
-                                }
-                            />
+                            <>
+                                {pathname == '/' ? (
+                                    <IconBase
+                                        icon='menu'
+                                        size={24}
+                                        color={
+                                            isScrolled
+                                                ? Colors.black['DEFAULT']
+                                                : Colors.white
+                                        }
+                                    />
+                                ) : (
+                                    <IconBase
+                                        icon='menu'
+                                        size={24}
+                                        color={Colors.blue['DEFAULT']}
+                                    />
+                                )}
+                            </>
                         ) : (
                             <IconBase
                                 icon='close'

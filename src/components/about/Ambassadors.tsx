@@ -79,7 +79,7 @@ export const Ambassadors = () => {
                     alt='ambassador'
                     className={cn(
                         'absolute',
-                        { 'right-[50%] top-[50%]': width < 768 },
+                        { '-top-[50%] right-[45%]': width < 768 },
                         { 'right-[20%] top-[10%]': width >= 768 }
                     )}
                 />
@@ -116,7 +116,7 @@ export const Ambassadors = () => {
                     className={cn(
                         'absolute',
                         { '-top-5 right-[50%]': width < 768 },
-                        { '-bottom-[10%] right-[25%]': width >= 768 }
+                        { '-bottom-[40%] right-[25%]': width >= 768 }
                     )}
                 />
                 <img
@@ -134,7 +134,7 @@ export const Ambassadors = () => {
                     className={cn(
                         'absolute',
                         { '-bottom-10 right-10': width < 768 },
-                        { 'left-[25%] top-[22%]': width >= 768 }
+                        { '-top-[10%] left-[25%]': width >= 768 }
                     )}
                 />
             </div>

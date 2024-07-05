@@ -7,7 +7,7 @@ export const SendForm = () => {
     const t = useTranslations('')
 
     return (
-        <div className='v container mx-auto flex w-full flex-col gap-6  py-6 md:py-0 md:mt-[53px] md:gap-[60px] md:pb-[115px] xl:px-[175px]'>
+        <div className='v container mx-auto flex w-full flex-col gap-6  py-6 md:mt-[53px] md:gap-[60px] md:py-0 md:pb-[115px] xl:px-[175px]'>
             <span className='text-center text-3xl font-semibold md:text-left md:text-5xl'>
                 {t('Contact_us')}
             </span>
@@ -105,8 +105,10 @@ export const SendForm = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mx-2.5 flex w-full flex-col rounded-[20px] bg-white p-5 drop-shadow-[0_20px_40px_#00000010] md:w-[635px] md:p-10'>
-                    <InputForm />
+                <div className='px-2.5'>
+                    <div className=' flex w-full flex-col rounded-[20px] bg-white p-5 drop-shadow-[0_20px_40px_#00000010] md:w-[635px] md:p-10'>
+                        <InputForm />
+                    </div>
                 </div>
             </div>
         </div>
