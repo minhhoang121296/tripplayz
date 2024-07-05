@@ -18,7 +18,7 @@
     "stocks": "Stocks",
     "commodities": "Commodities",
     "etfs": "ETFs",
-    "stocks_cfd": "Stocks (CFD)",
+    "stocks_cfd": "(CFD)",
     "leverages_up_to": "Leverages up to",
     "minimum_investment": "Minimum investment",
     "past_performance_disclaimer": "* Information regarding past performance is not a reliable indicator of future performance. Leverage restrictions may apply depending on client's circumstances and/or jurisdiction.",

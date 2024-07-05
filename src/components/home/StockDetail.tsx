@@ -12,31 +12,31 @@ export const StockDetail = () => {
             <Tabs defaultValue='forex' className='w-full'>
                 <TabsList className='m-0 flex flex-row overflow-auto px-5 xl:px-[176px]'>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
+                        className='flex-1 px-2.5 py-5 text-left text-lg'
                         value='forex'
                     >
                         {t('forex')}
                     </TabsTrigger>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
+                        className='flex-1 px-2.5 py-5 text-left text-lg'
                         value='crypto'
                     >
                         {t('crypto')}
                     </TabsTrigger>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
+                        className='flex-1 px-2.5 py-5 text-left text-lg'
                         value='stocks'
                     >
                         {t('stocks')}
                     </TabsTrigger>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
+                        className='flex-1 px-2.5 py-5 text-left text-lg'
                         value='commodities'
                     >
                         {t('commodities')}
                     </TabsTrigger>
                     <TabsTrigger
-                        className='min-w-32 flex-1 px-2.5 py-5 text-left text-lg'
+                        className='flex-1 px-2.5 py-5 text-left text-lg'
                         value='etfs'
                     >
                         {t('etfs')}

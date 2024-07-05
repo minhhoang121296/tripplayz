@@ -21,6 +21,41 @@ export const TableTabDetail = ({ type }: Iprops) => {
     const t = useTranslations('')
     const { width } = useWindowSize()
 
+    let dataHeader = {
+        forex: {
+            cfd: '220',
+            cfdText: t('forex'),
+            leverage: '1:20',
+            minInvest: '$1'
+        },
+        crypto: {
+            cfd: '10',
+            cfdText: t('crypto'),
+            leverage: '1:10',
+            minInvest: '$1'
+        },
+        stock: {
+            cfd: '220',
+            cfdText: t('stocks'),
+            leverage: '1:20',
+            minInvest: '$1'
+        },
+        commodities: {
+            cfd: '10',
+            cfdText: t('commodities'),
+            leverage: '1:200',
+            minInvest: '$1'
+        },
+        etf: {
+            cfd: '50',
+            cfdText: t('etfs'),
+            leverage: '1:20',
+            minInvest: '$1'
+        }
+    }
+
+    let curenheader = dataHeader[type]
+
     const renderTable = (type: TRADING_TYPE) => {
         switch (type) {
             case TRADING_TYPE.FOREX:
@@ -37,21 +72,45 @@ export const TableTabDetail = ({ type }: Iprops) => {
         }
     }
 
+    const returnHeader = () => {
+        switch (type) {
+            case TRADING_TYPE.FOREX:
+                return t('forex')
+            case TRADING_TYPE.CRYPTO:
+                return t('crypto')
+            case TRADING_TYPE.COMMODITIES:
+                return t('commodities')
+            case TRADING_TYPE.ETF:
+                return t('etf')
+            case TRADING_TYPE.STOCK:
+                return t('stock')
+            default:
+        }
+    }
+
     return (
         <>
             {width > 1024 && (
                 <div className='flex w-full flex-col gap-10 rounded-lg bg-white  p-10 shadow-md'>
                     <div className='flex flex-row justify-between'>
                         <div className='flex flex-row items-end gap-2'>
-                            <span className='text-2xl font-bold'>220</span>
-                            <span className=''>{t('stocks_cfd')}</span>
+                            <span className='text-2xl font-bold'>
+                                {curenheader.cfd}
+                            </span>
+                            <span className=''>
+                                {t(curenheader.cfdText)} {t('stocks_cfd')}
+                            </span>
                         </div>
                         <div className='flex flex-row items-end gap-2'>
-                            <span className='text-2xl font-bold'>220</span>
+                            <span className='text-2xl font-bold'>
+                                {curenheader.leverage}
+                            </span>
                             <span className=''>{t('leverages_up_to')}</span>
                         </div>
                         <div className='flex flex-row items-end gap-2'>
-                            <span className='text-2xl font-bold'>220</span>
+                            <span className='text-2xl font-bold'>
+                                {curenheader.minInvest}
+                            </span>
                             <span className=''>{t('minimum_investment')}</span>
                         </div>
                     </div>
@@ -73,10 +132,13 @@ export const TableTabDetail = ({ type }: Iprops) => {
                                     key={index}
                                 >
                                     <div className='flex flex-[2] flex-row gap-2'>
-                                        <Avatar>
-                                            <AvatarImage src={el.image} />
-                                            <AvatarFallback>CN</AvatarFallback>
-                                        </Avatar>
+                                        <div className=''>
+                                            <img
+                                                src={el.image}
+                                                alt={el.currencyPair}
+                                                className='h-[42px] w-[52px] object-contain'
+                                            />
+                                        </div>
                                         <div className='flex flex-col'>
                                             <span className='font-bold'>
                                                 {el.currencyPair}
@@ -128,16 +190,22 @@ export const TableTabDetail = ({ type }: Iprops) => {
             {width < 1024 && (
                 <div className='flex w-full flex-col gap-10 rounded-lg'>
                     <div className='flex flex-row flex-wrap gap-2 py-5 '>
-                        <div className='tiem-center flex flex-row gap-2'>
-                            <span className='font-bold'>220</span>
-                            <span className=''>{t('stocks_cfd')}</span>
+                        <div className='flex flex-row items-center gap-2'>
+                            <span className='font-bold'>{curenheader.cfd}</span>
+                            <span className=''>
+                                {t(curenheader.cfdText)} {t('stocks_cfd')}
+                            </span>
                         </div>
-                        <div className='tiem-center flex flex-row gap-2'>
-                            <span className='font-bold'>220</span>
+                        <div className='flex flex-row items-center gap-2'>
+                            <span className='font-bold'>
+                                {curenheader.leverage}
+                            </span>
                             <span className=''>{t('leverages_up_to')}</span>
                         </div>
-                        <div className='tiem-center flex flex-row gap-2'>
-                            <span className='font-bold'>220</span>
+                        <div className='flex flex-row items-center gap-2'>
+                            <span className='font-bold'>
+                                {curenheader.minInvest}
+                            </span>
                             <span className=''>{t('minimum_investment')}</span>
                         </div>
                     </div>
