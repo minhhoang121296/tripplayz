@@ -32,7 +32,7 @@ const AnimatedNumberOnScroll: React.FC<AnimatedNumberOnScrollProps> = ({ startNu
   }, [inView, startNumber, targetNumber, duration]);
 
   return (
-      <p ref={ref}>{number}</p>
+      <p ref={ref}>{number.toLocaleString('en-US').replaceAll(',', ' ')}</p>
   );
 };
 
