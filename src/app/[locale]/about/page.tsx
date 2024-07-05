@@ -10,7 +10,7 @@ import { useTranslations } from 'next-intl'
 export default function About() {
     const t = useTranslations('')
     return (
-        <div className='flex w-full flex-col bg-white-lightWhite'>
+        <div className={`flex w-full flex-col bg-white-lightWhite bg-[url('/images/app/grid6.png')]`}>
             <div className='h-[60px] flex-none md:h-[100px]'></div>
             <Hero />
             <SummerizeInfor />
@@ -19,6 +19,6 @@ export default function About() {
             <ChatTime />
             <BarCharDetail />
             <OnlneTrading />
-        </div>
+        </div >
     )
 }

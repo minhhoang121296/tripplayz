@@ -1,6 +1,6 @@
 'use client'
 import { ApexOptions } from 'apexcharts'
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import ReactApexChart from 'react-apexcharts'
 
 interface DataPoint {
@@ -15,11 +15,17 @@ interface Iprops {
 
 export const ApexChartRealTime = ({ width, height }: Iprops) => {
     const [series, setSeries] = useState<DataPoint[]>([
-        { x: new Date().getTime(), y: 10 }
+        { x: 1, y: 10 },
+        { x: 2, y: Math.floor(10) },
+        { x: 3, y: Math.floor(20) },
+        { x: 4, y: Math.floor(25) },
+        { x: 5, y: Math.floor(40) },
+        { x: 6, y: Math.floor(70) },
+        { x: 7, y: Math.floor(90) },
     ])
     const [options] = useState<ApexOptions>({
         chart: {
-            id: 'realtime',
+            // id: 'realtime',
             type: 'line',
             animations: {
                 enabled: true,
@@ -84,7 +90,7 @@ export const ApexChartRealTime = ({ width, height }: Iprops) => {
 
         xaxis: {
             labels: {
-                show: true,
+                show: false,
                 style: {
                     colors: '#FFFFFF',
                     fontSize: '18px',
@@ -112,7 +118,7 @@ export const ApexChartRealTime = ({ width, height }: Iprops) => {
                 show: true,
                 color: '#949494' // Màu sắc của đường viền trục y
             },
-            type: 'datetime',
+            type: 'numeric',
             tickAmount: 3
             // range: 20000000 // Đặt range tùy ý cho ví dụ
         },
@@ -128,23 +134,24 @@ export const ApexChartRealTime = ({ width, height }: Iprops) => {
         }
     })
 
+
     const chartRef = useRef<any | null>(null)
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            const newDataPoint: DataPoint = {
-                x: new Date().getTime(),
-                y: Math.floor(Math.random() * 100)
-            }
-            setSeries(prevSeries => [...prevSeries, newDataPoint].slice(-20)) // Giữ lại tối đa 20 điểm dữ liệu
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         const newDataPoint: DataPoint = {
+    //             x: new Date().getTime(),
+    //             y: Math.floor(Math.random() * 100)
+    //         }
+    //         setSeries(prevSeries => [...prevSeries, newDataPoint].slice(-20)) // Giữ lại tối đa 20 điểm dữ liệu
 
-            if (chartRef.current.updateSeries) {
-                chartRef.current?.updateSeries([{ data: series }]) as any
-            }
-        }, 1000)
+    //         if (chartRef.current.updateSeries) {
+    //             chartRef.current?.updateSeries([{ data: series }]) as any
+    //         }
+    //     }, 1000)
 
-        return () => clearInterval(interval)
-    }, [series])
+    //     return () => clearInterval(interval)
+    // }, [series])
 
     return (
         <div>

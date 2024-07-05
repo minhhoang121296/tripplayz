@@ -1,5 +1,7 @@
-import { useTranslations } from 'next-intl'
-import { StockMarketSimulator } from './StockValue'
+'use client'
+
+import { useTranslations } from 'next-intl';
+import { StockMarketSimulator } from './StockValue';
 
 export const SummerizeInfor = () => {
     const t = useTranslations('')
