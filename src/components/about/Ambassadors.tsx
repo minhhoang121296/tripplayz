@@ -2,7 +2,7 @@
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 import { useWindowSize } from 'react-use'
-import { StockMarketSimulator } from './StockValue'
+import AnimatedNumberOnScroll from '../ui/AnimatedNumberOnScroll'
 
 export const Ambassadors = () => {
     const t = useTranslations('')
@@ -20,29 +20,23 @@ export const Ambassadors = () => {
                     </span>
                 </div>
                 <div className='flex flex-col justify-center gap-[30px] md:flex-row md:gap-[60px]'>
-                    <div className='flex flex-col gap-5 text-center'>
-                        <span className='text-lg font-semibold'>
+                    <div className='flex flex-col gap-5'>
+                        <span className='text-lg font-semibold  text-center'>
                             {t('may')}
                         </span>
-                        <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            <StockMarketSimulator
-                                initialValue={134580}
-                                fluctuationRange={10}
-                                intervalMs={2000}
-                            />
+                        <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]  text-center'>
+                            <AnimatedNumberOnScroll duration={3000} startNumber={134500} targetNumber={134580} />
+
                         </span>
-                        <p className='text-lg'>{t('per_month')}</p>
+                        <p className='text-lg  text-center'>{t('per_month')}</p>
                     </div>
                     <div className='flex flex-col gap-5 text-center'>
                         <span className='text-lg font-semibold'>
                             {t('june')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            <StockMarketSimulator
-                                initialValue={6827280}
-                                fluctuationRange={10}
-                                intervalMs={2000}
-                            />
+                            <AnimatedNumberOnScroll duration={3000} startNumber={6827200} targetNumber={6827280} />
+                            
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>
@@ -51,11 +45,8 @@ export const Ambassadors = () => {
                             {t('muly')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_30px_40px_#0055FF80]'>
-                            <StockMarketSimulator
-                                initialValue={20375097}
-                                fluctuationRange={10}
-                                intervalMs={2000}
-                            />
+                            <AnimatedNumberOnScroll duration={3000} startNumber={20375000} targetNumber={20375097} />
+                            
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>
