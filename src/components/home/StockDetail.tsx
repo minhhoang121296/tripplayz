@@ -1,6 +1,6 @@
 'use client'
+import { TRADING_TYPE } from '@/@types'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { TRADING_TYPE } from '@/types'
 import { useTranslations } from 'next-intl'
 import { TableTabDetail } from './components/TableTabDetail'
 

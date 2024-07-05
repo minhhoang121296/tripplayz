@@ -1,3 +1,4 @@
+import { TRADING_TYPE } from '@/@types'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import Sparkline from '@/components/ui/charts/Sparkline'
@@ -9,7 +10,6 @@ import {
     stocks
 } from '@/data'
 import { cn } from '@/lib/utils'
-import { TRADING_TYPE } from '@/types'
 import { useTranslations } from 'next-intl'
 import { useWindowSize } from 'react-use'
 

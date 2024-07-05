@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
-import { StockMarketSimulator } from './StockValue'
+import NumberAnimation from '../custom/NumberAnimation'
+import { StockMarketSimulator } from '../custom/StockValue'
 
 export const ChatTime = () => {
     const t = useTranslations('')
@@ -103,10 +104,9 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blueGray drop-shadow-[0_4px_40px_#A5BAE480] md:text-7xl'>
-                                        <StockMarketSimulator
-                                            initialValue={48}
-                                            fluctuationRange={10}
-                                            intervalMs={2000}
+                                        <NumberAnimation
+                                            targetNumber={48}
+                                            duration={3000}
                                         />
                                     </span>
                                     <span className='text-lg text-white'>
@@ -119,6 +119,10 @@ export const ChatTime = () => {
                                             initialValue={60}
                                             fluctuationRange={10}
                                             intervalMs={2000}
+                                        />
+                                        <NumberAnimation
+                                            targetNumber={60}
+                                            duration={3000}
                                         />
                                     </span>
                                     <span className='text-lg text-white'>

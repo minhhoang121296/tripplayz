@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { useInView } from 'react-intersection-observer'
 import { useWindowSize } from 'react-use'
-import { StockMarketSimulator } from './StockValue'
+import NumberAnimation from '../custom/NumberAnimation'
 
 export const BarCharDetail = () => {
     const t = useTranslations('')
@@ -35,10 +35,9 @@ export const BarCharDetail = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
                                 {'$'}
-                                <StockMarketSimulator
-                                    initialValue={100}
-                                    fluctuationRange={10}
-                                    intervalMs={2000}
+                                <NumberAnimation
+                                    targetNumber={100}
+                                    duration={3000}
                                 />
                             </div>
                             <span className='text-smxm md:text-lg'>
@@ -66,10 +65,9 @@ export const BarCharDetail = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
                                 {'$'}
-                                <StockMarketSimulator
-                                    initialValue={200}
-                                    fluctuationRange={10}
-                                    intervalMs={2000}
+                                <NumberAnimation
+                                    targetNumber={200}
+                                    duration={3000}
                                 />
                             </div>
                             <span className='text-smxm md:text-lg'>
@@ -97,10 +95,9 @@ export const BarCharDetail = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
                                 {'$'}
-                                <StockMarketSimulator
-                                    initialValue={300}
-                                    fluctuationRange={10}
-                                    intervalMs={2000}
+                                <NumberAnimation
+                                    targetNumber={300}
+                                    duration={3000}
                                 />
                             </div>
                             <span className='text-smxm md:text-lg'>

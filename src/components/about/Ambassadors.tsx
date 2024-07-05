@@ -2,7 +2,7 @@
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 import { useWindowSize } from 'react-use'
-import { StockMarketSimulator } from './StockValue'
+import NumberAnimation from '../custom/NumberAnimation'
 
 export const Ambassadors = () => {
     const t = useTranslations('')
@@ -24,11 +24,10 @@ export const Ambassadors = () => {
                         <span className='text-lg font-semibold'>
                             {t('may')}
                         </span>
-                        <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            <StockMarketSimulator
-                                initialValue={134580}
-                                fluctuationRange={10}
-                                intervalMs={2000}
+                        <span className='min-w-[260px] text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
+                            <NumberAnimation
+                                targetNumber={134580}
+                                duration={3000}
                             />
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
@@ -37,11 +36,10 @@ export const Ambassadors = () => {
                         <span className='text-lg font-semibold'>
                             {t('june')}
                         </span>
-                        <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            <StockMarketSimulator
-                                initialValue={6827280}
-                                fluctuationRange={10}
-                                intervalMs={2000}
+                        <span className='min-w-[260px] text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
+                            <NumberAnimation
+                                targetNumber={6827280}
+                                duration={3000}
                             />
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
@@ -50,11 +48,10 @@ export const Ambassadors = () => {
                         <span className='text-lg font-semibold'>
                             {t('muly')}
                         </span>
-                        <span className='text-5xl font-medium text-blue drop-shadow-[0_30px_40px_#0055FF80]'>
-                            <StockMarketSimulator
-                                initialValue={20375097}
-                                fluctuationRange={10}
-                                intervalMs={2000}
+                        <span className='min-w-[260px] text-5xl font-medium text-blue drop-shadow-[0_30px_40px_#0055FF80]'>
+                            <NumberAnimation
+                                targetNumber={20375097}
+                                duration={3000}
                             />
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
