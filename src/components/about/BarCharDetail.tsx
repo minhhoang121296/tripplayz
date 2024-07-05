@@ -60,7 +60,6 @@ export const BarCharDetail = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
                                 {'$ XX'}
-                                
                             </div>
                             <span className='text-smxm md:text-lg'>
                                 {t('per_month')}
@@ -87,7 +86,6 @@ export const BarCharDetail = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
                                 {'$XX'}
-                            
                             </div>
                             <span className='text-smxm md:text-lg'>
                                 {t('per_month')}

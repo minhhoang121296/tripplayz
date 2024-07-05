@@ -33,6 +33,7 @@
         "next-themes": "^0.2.1",
         "nextjs-toploader": "^1.6.12",
         "react": "^18",
+        "react-animated-numbers": "^0.18.0",
         "react-apexcharts": "^1.4.1",
         "react-day-picker": "^8.10.0",
         "react-dom": "^18",

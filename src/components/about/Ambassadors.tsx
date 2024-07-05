@@ -21,22 +21,28 @@ export const Ambassadors = () => {
                 </div>
                 <div className='flex flex-col justify-center gap-[30px] md:flex-row md:gap-[60px]'>
                     <div className='flex flex-col gap-5'>
-                        <span className='text-lg font-semibold  text-center'>
+                        <span className='text-center text-lg  font-semibold'>
                             {t('may')}
                         </span>
-                        <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]  text-center'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={134560} targetNumber={134580} />
-
+                        <span className='text-center text-5xl font-medium text-blue  drop-shadow-[0_4px_40px_#0055FF80]'>
+                            <AnimatedNumberOnScroll
+                                duration={3000}
+                                startNumber={134560}
+                                targetNumber={134580}
+                            />
                         </span>
-                        <p className='text-lg  text-center'>{t('per_month')}</p>
+                        <p className='text-center  text-lg'>{t('per_month')}</p>
                     </div>
                     <div className='flex flex-col gap-5 text-center'>
                         <span className='text-lg font-semibold'>
                             {t('june')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={6827250} targetNumber={6827280} />
-                            
+                            <AnimatedNumberOnScroll
+                                duration={3000}
+                                startNumber={6827250}
+                                targetNumber={6827280}
+                            />
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>
@@ -45,8 +51,11 @@ export const Ambassadors = () => {
                             {t('muly')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_30px_40px_#0055FF80]'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={20375087} targetNumber={20375097} />
-                            
+                            <AnimatedNumberOnScroll
+                                duration={3000}
+                                startNumber={20375087}
+                                targetNumber={20375097}
+                            />
                         </span>
                         <p className='text-lg'>{t('per_month')}</p>
                     </div>

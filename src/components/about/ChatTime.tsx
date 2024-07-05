@@ -34,8 +34,11 @@ export const ChatTime = () => {
                             <div className='flex flex-row border-b border-[#949494]/50 pb-6 pt-1'>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-7xl'>
-                                    <AnimatedNumberOnScroll duration={3000} startNumber={0} targetNumber={2} />
-
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={2}
+                                        />
                                     </span>
                                     <span className='text-lg text-white'>
                                         {t('seconds')}
@@ -43,8 +46,11 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-7xl'>
-                                        <AnimatedNumberOnScroll duration={3000} startNumber={0} targetNumber={48} />
-                                        
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={48}
+                                        />
                                     </span>
                                     <span className='text-lg text-white'>
                                         {t('seconds')}
@@ -52,8 +58,11 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-7xl'>
-                                        <AnimatedNumberOnScroll duration={3000} startNumber={0} targetNumber={60} />
-                                        
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={60}
+                                        />
                                     </span>
                                     <span className='text-lg text-white'>
                                         {t('seconds')}
@@ -84,8 +93,11 @@ export const ChatTime = () => {
                             <div className='flex flex-row border-b border-[#949494]/50 pb-6 pt-1 '>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blueGray drop-shadow-[0_4px_40px_#A5BAE480] md:text-7xl'>
-                                        <AnimatedNumberOnScroll duration={3000} startNumber={0} targetNumber={2} />
-
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={2}
+                                        />
                                     </span>
                                     <span className='text-lg text-white'>
                                         {t('seconds')}
@@ -93,8 +105,11 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blueGray drop-shadow-[0_4px_40px_#A5BAE480] md:text-7xl'>
-                                        <AnimatedNumberOnScroll duration={3000} startNumber={0} targetNumber={48} />
-                                        
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={48}
+                                        />
                                     </span>
                                     <span className='text-lg text-white'>
                                         {t('seconds')}
@@ -102,7 +117,11 @@ export const ChatTime = () => {
                                 </div>
                                 <div className='flex flex-1 flex-col'>
                                     <span className='text-6xl text-blueGray drop-shadow-[0_4px_40px_#A5BAE480] md:text-7xl'>
-                                        <AnimatedNumberOnScroll duration={3000} startNumber={0} targetNumber={60} />
+                                        <AnimatedNumberOnScroll
+                                            duration={3000}
+                                            startNumber={0}
+                                            targetNumber={60}
+                                        />
                                     </span>
                                     <span className='text-lg text-white'>
                                         {t('seconds')}

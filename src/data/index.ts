@@ -47,35 +47,9 @@ const series = [
 
 export const forexdata = [
     {
-        image: '/images/forex/AUDUSD.png',
-        currencyPair: 'EUR/USD',
-        bid: 42.987,
-        ask: 43.203,
-        spread: '+0.35%',
-        options: options,
-        series: series
-    },
-    {
-        image: '/images/forex/CHFUSD.png',
-        currencyPair: 'EUR/USD',
-        bid: 42.987,
-        ask: 43.203,
-        spread: '+0.35%',
-        options: options,
-        series: series
-    },
-    {
         image: '/images/forex/EURUSD.png',
         currencyPair: 'EUR/USD',
-        bid: 42.987,
-        ask: 43.203,
-        spread: '+0.35%',
-        options: options,
-        series: series
-    },
-    {
-        image: '/images/forex/GBPUSD.png',
-        currencyPair: 'EUR/USD',
+        fullPairName: 'EURUSD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -84,7 +58,39 @@ export const forexdata = [
     },
     {
         image: '/images/forex/JPYUSD.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'JPY/USD',
+        fullPairName: 'JPYUSD',
+        bid: 42.987,
+        ask: 43.203,
+        spread: '+0.35%',
+        options: options,
+        series: series
+    },
+    {
+        image: '/images/forex/GBPUSD.png',
+        currencyPair: 'GBP/USD',
+        fullPairName: 'GBPUSD',
+        bid: 42.987,
+        ask: 43.203,
+        spread: '+0.35%',
+        options: options,
+        series: series
+    },
+
+    {
+        image: '/images/forex/CHFUSD.png',
+        currencyPair: 'CHF/USD',
+        fullPairName: 'CHFUSD',
+        bid: 42.987,
+        ask: 43.203,
+        spread: '+0.35%',
+        options: options,
+        series: series
+    },
+    {
+        image: '/images/forex/AUDUSD.png',
+        currencyPair: 'AUD/USD',
+        fullPairName: 'AUDUSD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -96,7 +102,8 @@ export const forexdata = [
 export const crytocurrency = [
     {
         image: '/images/coint/binance.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'BTC/USD',
+        fullPairName: 'Bitcoin/USD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -105,7 +112,8 @@ export const crytocurrency = [
     },
     {
         image: '/images/coint/bittcoin.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'ETH/USD',
+        fullPairName: 'Ethereum/USD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -114,7 +122,8 @@ export const crytocurrency = [
     },
     {
         image: '/images/coint/cardano.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'BNB/USD',
+        fullPairName: 'Binance Coin/USD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -123,7 +132,8 @@ export const crytocurrency = [
     },
     {
         image: '/images/coint/eth.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'USDT/USD',
+        fullPairName: 'Tether/USD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -132,7 +142,8 @@ export const crytocurrency = [
     },
     {
         image: '/images/coint/tnt.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'ADA/USD',
+        fullPairName: 'Cardano/USD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -143,35 +154,9 @@ export const crytocurrency = [
 
 export const commodities = [
     {
-        image: '/images/commodities/copper.png',
-        currencyPair: 'EUR/USD',
-        bid: 42.987,
-        ask: 43.203,
-        spread: '+0.35%',
-        options: options,
-        series: series
-    },
-    {
         image: '/images/commodities/gold.png',
-        currencyPair: 'EUR/USD',
-        bid: 42.987,
-        ask: 43.203,
-        spread: '+0.35%',
-        options: options,
-        series: series
-    },
-    {
-        image: '/images/commodities/oil.png',
-        currencyPair: 'EUR/USD',
-        bid: 42.987,
-        ask: 43.203,
-        spread: '+0.35%',
-        options: options,
-        series: series
-    },
-    {
-        image: '/images/commodities/petrolium.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'XAU/USD',
+        fullPairName: 'Gold/USD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -180,7 +165,38 @@ export const commodities = [
     },
     {
         image: '/images/commodities/silver.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'XAG/USD',
+        fullPairName: 'Silver/USD',
+        bid: 42.987,
+        ask: 43.203,
+        spread: '+0.35%',
+        options: options,
+        series: series
+    },
+    {
+        image: '/images/commodities/oil.png',
+        currencyPair: 'WTI/USD',
+        fullPairName: 'Crude Oil/USD',
+        bid: 42.987,
+        ask: 43.203,
+        spread: '+0.35%',
+        options: options,
+        series: series
+    },
+    {
+        image: '/images/commodities/petrolium.png',
+        currencyPair: 'NG/USD',
+        fullPairName: 'Natural Gas/USD',
+        bid: 42.987,
+        ask: 43.203,
+        spread: '+0.35%',
+        options: options,
+        series: series
+    },
+    {
+        image: '/images/commodities/copper.png',
+        currencyPair: 'HG/USD',
+        fullPairName: 'Copper/USD',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -192,7 +208,8 @@ export const commodities = [
 export const indexNumbers = [
     {
         image: '/images/index/SQQQ.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'US 500',
+        fullPairName: 'US SPX 500 Index',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -201,7 +218,8 @@ export const indexNumbers = [
     },
     {
         image: '/images/index/SQQQ.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'US 100',
+        fullPairName: 'US Tech 100 Index',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -210,7 +228,8 @@ export const indexNumbers = [
     },
     {
         image: '/images/index/SQQQ.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'US 30',
+        fullPairName: 'US Wall Street 30 Index',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -219,7 +238,8 @@ export const indexNumbers = [
     },
     {
         image: '/images/index/UKX.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'UK 100',
+        fullPairName: 'UK 100 Index',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -227,8 +247,9 @@ export const indexNumbers = [
         series: series
     },
     {
-        image: '/images/index/UKX.png',
-        currencyPair: 'EUR/USD',
+        image: '/images/index/NKY.png',
+        currencyPair: 'JP 225',
+        fullPairName: 'Japan 225 Index',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -240,7 +261,8 @@ export const indexNumbers = [
 export const stocks = [
     {
         image: '/images/stocks/AAPL.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'AAPL',
+        fullPairName: 'Apple',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -249,7 +271,8 @@ export const stocks = [
     },
     {
         image: '/images/stocks/AMZN.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'MSFT',
+        fullPairName: 'Microsoft',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -258,7 +281,8 @@ export const stocks = [
     },
     {
         image: '/images/stocks/GOOGL.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'AMZN',
+        fullPairName: 'Amazon',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -267,7 +291,8 @@ export const stocks = [
     },
     {
         image: '/images/stocks/MSFT.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'GOOGL',
+        fullPairName: 'Alphabet',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',
@@ -276,7 +301,8 @@ export const stocks = [
     },
     {
         image: '/images/stocks/TSLA.png',
-        currencyPair: 'EUR/USD',
+        currencyPair: 'TSLA',
+        fullPairName: 'Tesla',
         bid: 42.987,
         ask: 43.203,
         spread: '+0.35%',

@@ -24,22 +24,35 @@ export const LineChartDetail = () => {
                     <div className='hidden flex-col items-center gap-[30px] md:flex md:flex-row'>
                         <div className='flex flex-none flex-col text-right'>
                             <p className='text-2xl text-white'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={14000} targetNumber={14150} />
+                                <AnimatedNumberOnScroll
+                                    duration={3000}
+                                    startNumber={14000}
+                                    targetNumber={14150}
+                                />
                             </p>
                             <div className='flex break-keep text-6xl font-light text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                                <AnimatedNumberOnScroll duration={3000} startNumber={14130} targetNumber={14150} />
-                                
+                                <AnimatedNumberOnScroll
+                                    duration={3000}
+                                    startNumber={14130}
+                                    targetNumber={14150}
+                                />
                             </div>
                         </div>
                         <div className='w-full border-b border-gray-lightGray'></div>
                         <div className='flex flex-none flex-col text-left'>
                             <p className='text-2xl text-white'>
-                            <AnimatedNumberOnScroll duration={3000} startNumber={23436} targetNumber={23456} />
-                                
+                                <AnimatedNumberOnScroll
+                                    duration={3000}
+                                    startNumber={23436}
+                                    targetNumber={23456}
+                                />
                             </p>
                             <div className='flex text-6xl font-light text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
-                                <AnimatedNumberOnScroll duration={3000} startNumber={23436} targetNumber={23456} />
-
+                                <AnimatedNumberOnScroll
+                                    duration={3000}
+                                    startNumber={23436}
+                                    targetNumber={23456}
+                                />
                             </div>
                         </div>
                     </div>
@@ -48,7 +61,7 @@ export const LineChartDetail = () => {
                     <span className='hidden text-4xl font-semibold text-white md:flex'>
                         {t('trading_volume_per_month')}
                     </span>
-                    <div className='flex md:w-[620px] flex-col items-center px-2'>
+                    <div className='flex flex-col items-center px-2 md:w-[620px]'>
                         <ApexChartRealTime
                             width={width < 768 ? '100%' : 620}
                             height={350}

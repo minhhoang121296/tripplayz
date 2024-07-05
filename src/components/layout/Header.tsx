@@ -39,7 +39,7 @@ export const Header: FC<Props> = ({ locale }) => {
     return (
         <div
             className={cn(
-                'fixed top-0 z-50 flex w-full flex-col border-[#818181] md:border-b',
+                'header z-50 flex w-full flex-col border-[#818181] md:border-b',
                 pathname == '/' ? 'backdrop-blur-lg' : 'bg-white-lightWhite'
             )}
         >
@@ -89,7 +89,7 @@ export const Header: FC<Props> = ({ locale }) => {
                                 className='flex flex-row items-center gap-1'
                             >
                                 <Image
-                                    src={'/images/app/china.png'}
+                                    src={'/images/app/united-kingdom.png'}
                                     width={24}
                                     height={24}
                                     alt='eth'
