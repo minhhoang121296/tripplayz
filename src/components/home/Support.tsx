@@ -21,11 +21,9 @@ export const Support = () => {
                         </div>
                     </div>
                     <span className='text-lg font-semibold'>
-                        {t('advanced_platform')}
+                        {t('home_icon_heading01')}
                     </span>
-                    <span className='text-basem'>
-                        {t('platform_availability')}
-                    </span>
+                    <span className='text-basem'>{t('home_icon_text01')}</span>
                 </div>
                 <div className='flex h-full w-full flex-col items-center gap-[23px] text-center'>
                     <div className='h-[120px] w-[120px] rounded-full bg-gray-300 p-4'>
@@ -38,11 +36,9 @@ export const Support = () => {
                         </div>
                     </div>
                     <span className='text-lg font-semibold'>
-                        {t('free_practice')}
+                        {t('home_icon_heading02')}
                     </span>
-                    <span className='text-basem'>
-                        {t('refillable_practice_account')}
-                    </span>
+                    <span className='text-basem'>{t('home_icon_text02')}</span>
                 </div>
                 <div className='flex h-full w-full flex-col items-center gap-[23px] text-center'>
                     <div className='h-[120px] w-[120px] rounded-full bg-blueGray-300 p-4'>
@@ -55,9 +51,9 @@ export const Support = () => {
                         </div>
                     </div>
                     <span className='text-lg font-semibold'>
-                        {t('24_7_support')}
+                        {t('home_icon_heading03')}
                     </span>
-                    <span className='text-basem'>{t('prompt_support')}</span>
+                    <span className='text-basem'>{t('home_icon_text03')}</span>
                 </div>
             </div>
             <div className='flex flex-col items-center justify-center px-5'>
@@ -67,7 +63,7 @@ export const Support = () => {
                     size={'md'}
                 >
                     <ArrowDownToLine />
-                    {t('download_app')}
+                    {t('bt_home_download_app')}
                 </Button>
             </div>
         </div>

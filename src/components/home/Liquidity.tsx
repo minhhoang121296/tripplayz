@@ -52,7 +52,7 @@ export const Liquidity = () => {
     return (
         <div className='container mx-auto mb-[133px] flex w-full flex-col gap-6 px-5 md:gap-[60px] xl:px-[200px]'>
             <span className='text-3xl font-semibold md:text-4xls'>
-                {t('Liquidity_Providers')}
+                {t('home_liquidity_providers')}
             </span>
             <div className='grid grid-cols-2 gap-10 md:grid-cols-5 md:gap-[92px]'>
                 {imageV1.map((image, index) => (

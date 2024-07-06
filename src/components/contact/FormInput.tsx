@@ -67,12 +67,12 @@ export function InputForm() {
                         render={({ field }) => (
                             <FormItem className='flex w-full flex-col p-1.5'>
                                 <FormLabel className='text-smxm font-medium'>
-                                    {t('name')}
+                                    {t('contact_form_name')}
                                 </FormLabel>
                                 <FormControl>
                                     <Input
                                         className='text-base'
-                                        placeholder={t('your_name')}
+                                        placeholder={t('contact_form_yourname')}
                                         {...field}
                                     />
                                 </FormControl>
@@ -86,12 +86,14 @@ export function InputForm() {
                         render={({ field }) => (
                             <FormItem className='flex w-full flex-col p-1.5'>
                                 <FormLabel className='text-smxm font-medium'>
-                                    {t('lastname')}
+                                    {t('contact_form_lastname')}
                                 </FormLabel>
                                 <FormControl>
                                     <Input
                                         className='text-base'
-                                        placeholder={t('your_lastname')}
+                                        placeholder={t(
+                                            'contact_form_yourlastname'
+                                        )}
                                         {...field}
                                     />
                                 </FormControl>
@@ -106,12 +108,12 @@ export function InputForm() {
                     render={({ field }) => (
                         <FormItem className='flex flex-col p-1.5'>
                             <FormLabel className='text-smxm font-medium'>
-                                {t('Email')}
+                                {t('contact_form_email')}
                             </FormLabel>
                             <FormControl>
                                 <Input
                                     className='text-base'
-                                    placeholder={t('email_example')}
+                                    placeholder={t('contact_form_youremail')}
                                     {...field}
                                 />
                             </FormControl>
@@ -125,11 +127,11 @@ export function InputForm() {
                     render={({ field }) => (
                         <FormItem className='flex flex-col p-1.5'>
                             <FormLabel className='text-smxm font-medium'>
-                                {t('message')}
+                                {t('contact_form_message')}
                             </FormLabel>
                             <FormControl>
                                 <Textarea
-                                    placeholder={t('type_your_message')}
+                                    placeholder={t('contact_form_yourmessage')}
                                     {...field}
                                 />
                             </FormControl>
@@ -145,7 +147,7 @@ export function InputForm() {
                         type='submit'
                     >
                         <ArrowRight />
-                        {t('send')}
+                        {t('bt_contact_send')}
                     </Button>
                 </div>
             </form>

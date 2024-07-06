@@ -13,16 +13,16 @@ export const Ambassadors = () => {
             <div className='flex w-full flex-col gap-[30px] text-center md:gap-[64px]'>
                 <div className='flex w-full flex-col items-center justify-center gap-[30px] text-center'>
                     <p className='text-3xl font-semibold md:text-4xls'>
-                        {t('accounts_registered')}
+                        {t('about_accounts_registered')}
                     </p>
                     <span className='text-basem md:w-[430px]'>
-                        {t('active_users_growth')}
+                        {t('about_accounts_registered_text')}
                     </span>
                 </div>
                 <div className='flex flex-col justify-center gap-[30px] md:flex-row md:gap-[60px]'>
                     <div className='flex flex-col gap-5'>
                         <span className='text-center text-lg  font-semibold'>
-                            {t('may')}
+                            {t('about_accounts_may')}
                         </span>
                         <span className='text-center text-5xl font-medium text-blue  drop-shadow-[0_4px_40px_#0055FF80]'>
                             <AnimatedNumberOnScroll
@@ -31,11 +31,13 @@ export const Ambassadors = () => {
                                 targetNumber={134580}
                             />
                         </span>
-                        <p className='text-center  text-lg'>{t('per_month')}</p>
+                        <p className='text-center  text-lg'>
+                            {t('about_accounts_month')}
+                        </p>
                     </div>
                     <div className='flex flex-col gap-5 text-center'>
                         <span className='text-lg font-semibold'>
-                            {t('june')}
+                            {t('about_accounts_june')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_4px_40px_#0055FF80]'>
                             <AnimatedNumberOnScroll
@@ -44,11 +46,11 @@ export const Ambassadors = () => {
                                 targetNumber={6827280}
                             />
                         </span>
-                        <p className='text-lg'>{t('per_month')}</p>
+                        <p className='text-lg'>{t('about_accounts_month')}</p>
                     </div>
                     <div className='flex flex-col gap-5 text-center'>
                         <span className='text-lg font-semibold'>
-                            {t('muly')}
+                            {t('about_accounts_july')}
                         </span>
                         <span className='text-5xl font-medium text-blue drop-shadow-[0_30px_40px_#0055FF80]'>
                             <AnimatedNumberOnScroll
@@ -57,13 +59,13 @@ export const Ambassadors = () => {
                                 targetNumber={20375097}
                             />
                         </span>
-                        <p className='text-lg'>{t('per_month')}</p>
+                        <p className='text-lg'>{t('about_accounts_month')}</p>
                     </div>
                 </div>
             </div>
             <div className='relative flex flex-col  items-center justify-center rounded-xl bg-white px-5 py-[80px] text-2xl font-semibold md:py-[44px]'>
                 <span className='text-center text-2xl font-semibold'>
-                    {t('ambassadors_worldwide')}
+                    {t('about_accounts_ambass')}
                 </span>
                 <img
                     src='/images/app/china.png'

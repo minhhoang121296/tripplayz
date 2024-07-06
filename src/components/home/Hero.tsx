@@ -17,7 +17,7 @@ export const Hero = () => {
             <div className='flex h-full w-full flex-col items-center justify-center gap-[61px] md:gap-[39px]'>
                 <div className='flex flex-col gap-[39px] text-center'>
                     <p className='text-xss font-semibold  tracking-[0.5em] text-white md:text-base md:font-extrabold'>
-                        {t('welcome_to_kerdant').toUpperCase()}
+                        {t('home_welcome').toUpperCase()}
                     </p>
                     <div className='flex flex-col'>
                         <span className='text-3xl font-bold text-white md:text-5xl'>
@@ -37,7 +37,7 @@ export const Hero = () => {
                         size={width < 1024 ? 'sm' : 'md'}
                         variant={'whiteOutline'}
                     >
-                        {t('free_practice_account')}
+                        {t('bt_home_free_account')}
                     </Button>
                     <Button
                         size={width < 1024 ? 'sm' : 'md'}
@@ -50,7 +50,7 @@ export const Hero = () => {
                                 size={'24'}
                             />
                         )}
-                        {t('trade_now')}
+                        {t('bt_home_trade_now')}
                     </Button>
                 </div>
             </div>

@@ -5,18 +5,22 @@ import {
     DropdownMenuContent,
     DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
-import { dataNestedRoute } from '@/constants'
+import { dataNestedRoute, optionsLanguage } from '@/constants'
 import { Link } from '@/lib/navigation'
 import { cn } from '@/lib/utils'
 import { mdiMenuDown } from '@mdi/js'
 import Icon from '@mdi/react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import { useSelectedLayoutSegment } from 'next/navigation'
+import {
+    useSelectedLayoutSegment,
+    useSelectedLayoutSegments
+} from 'next/navigation'
 import { FC, useEffect, useState } from 'react'
 import { useWindowSize } from 'usehooks-ts'
 import { IconBase } from '../custom/IconBase'
 import { Button } from '../ui/button'
+import LangSwitcher from './LangSwitcher'
 
 interface Props {
     locale: string
@@ -28,7 +32,11 @@ export const Header: FC<Props> = ({ locale }) => {
     const [activeKey, setActiveKey] = useState(undefined)
     const [activeMenu, setActiveMenu] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
+
     const t = useTranslations('')
+    const urlSegments = useSelectedLayoutSegments()
+
+    let langSlect = optionsLanguage.find(el => el.code == locale)
 
     useEffect(() => {
         if (width > 768) {
@@ -135,7 +143,7 @@ export const Header: FC<Props> = ({ locale }) => {
                                 className='flex flex-row items-center gap-1'
                             >
                                 <Image
-                                    src={'/images/app/united-kingdom.png'}
+                                    src={langSlect?.images || ''}
                                     width={24}
                                     height={24}
                                     alt='eth'
@@ -157,7 +165,9 @@ export const Header: FC<Props> = ({ locale }) => {
                                 </>
                             </button>
                         </DropdownMenuTrigger>
-                        <DropdownMenuContent></DropdownMenuContent>
+                        <DropdownMenuContent>
+                            <LangSwitcher onSelect={lang => {}} />
+                        </DropdownMenuContent>
                     </DropdownMenu>
 
                     <button
@@ -197,10 +207,10 @@ export const Header: FC<Props> = ({ locale }) => {
 
                     <div className='hidden flex-row gap-5 md:flex'>
                         <Button size={'sm'} variant={'whiteOutline'}>
-                            {t('login')}
+                            {t('bt_login')}
                         </Button>
                         <Button size={'sm'} variant={'primaryShadow'}>
-                            {t('register')}
+                            {t('bt_register')}
                         </Button>
                     </div>
                 </div>

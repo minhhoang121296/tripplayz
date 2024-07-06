@@ -10,9 +10,9 @@ export const SummerizeInfor = () => {
         <div className='container mx-auto flex w-full flex-col items-center gap-[50px] px-5 py-[44px] md:gap-[62px] md:pb-[119px] md:pt-[94px] xl:px-[300px]'>
             <div className='flex w-full flex-col gap-[30px] text-center md:w-[430px]'>
                 <p className='text-3xl font-semibold md:text-4xls'>
-                    {t('support_team')}
+                    {t('about_support_team')}
                 </p>
-                <p className='text-basem'>{t('support_team_description')}</p>
+                <p className='text-basem'>{t('about_support_team_text')}</p>
             </div>
             <div className='flex w-full flex-col justify-center gap-[30px] md:flex-row md:gap-[60px]'>
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
@@ -25,7 +25,7 @@ export const SummerizeInfor = () => {
                         />
                     </div>
                     <p className='text-lg font-semibold'>
-                        {t('support_members')}
+                        {t('about_support_members')}
                     </p>
                 </div>
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
@@ -38,7 +38,7 @@ export const SummerizeInfor = () => {
                         />
                     </div>
                     <p className='text-lg font-semibold'>
-                        {t('support_members')}
+                        {t('about_support_members')}
                     </p>
                 </div>
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
@@ -51,7 +51,7 @@ export const SummerizeInfor = () => {
                         />
                     </div>
                     <p className='text-lg font-semibold'>
-                        {t('support_members')}
+                        {t('about_support_members')}
                     </p>
                 </div>
             </div>

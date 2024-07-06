@@ -15,10 +15,10 @@ export const LineChartDetail = () => {
                 <div className='flex flex-col gap-[32px] px-5'>
                     <div className='flex w-full flex-col items-center gap-[30px] text-center text-white'>
                         <p className='text-center text-3xl font-semibold md:text-4xl'>
-                            {t('trades_per_day')}
+                            {t('about_trade_day')}
                         </p>
                         <span className='max-w-[430px] text-basem '>
-                            {t('trades_per_day_description')}
+                            {t('about_trade_day_text')}
                         </span>
                     </div>
                     <div className='hidden flex-col items-center gap-[30px] md:flex md:flex-row'>
@@ -59,7 +59,7 @@ export const LineChartDetail = () => {
                 </div>
                 <div className='flex w-full flex-col items-center justify-center gap-10'>
                     <span className='hidden text-4xl font-semibold text-white md:flex'>
-                        {t('trading_volume_per_month')}
+                        {t('about_trade_volume')}
                     </span>
                     <div className='flex flex-col items-center px-2 md:w-[620px]'>
                         <ApexChartRealTime
@@ -67,9 +67,15 @@ export const LineChartDetail = () => {
                             height={350}
                         />
                         <div className='flex w-full flex-row justify-between px-10 text-lg text-white'>
-                            <span className='text-lg'>{t('may')}</span>
-                            <span className='text-lg'>{t('june')}</span>
-                            <span className='text-lg'>{t('muly')}</span>
+                            <span className='text-lg'>
+                                {t('about_trade_volume_may')}
+                            </span>
+                            <span className='text-lg'>
+                                {t('about_trade_volume_june')}
+                            </span>
+                            <span className='text-lg'>
+                                {t('about_trade_volume_july')}
+                            </span>
                         </div>
                     </div>
                 </div>

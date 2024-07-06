@@ -22,21 +22,21 @@ export const BarCharDetail = () => {
                 <div className='flex w-full flex-col items-center justify-center gap-[30px] text-center'>
                     <div className='flex flex-col px-[13.5px] py-2.5'>
                         <p className='text-3xl font-semibold md:text-4xls'>
-                            {t('affiliates_monthly_profit')}
+                            {t('about_affiliates')}
                         </p>
                     </div>
                     <span className='p-2.5 text-basem md:w-[482px]'>
-                        {t('affiliates_program_description')}
+                        {t('about_affiliates_text')}
                     </span>
                 </div>
                 <div className='flex w-full items-end justify-center' ref={ref}>
                     <div>
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
-                                {'$ XX'}
+                                {'$XX'}
                             </div>
                             <span className='text-smxm md:text-lg'>
-                                {t('per_month')}
+                                {t('about_affiliates_month')}
                             </span>
                         </div>
                         <motion.img
@@ -59,10 +59,10 @@ export const BarCharDetail = () => {
                     <div>
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>
-                                {'$ XX'}
+                                {'$XX'}
                             </div>
                             <span className='text-smxm md:text-lg'>
-                                {t('per_month')}
+                                {t('about_affiliates_month')}
                             </span>
                         </div>
                         <motion.img
@@ -88,7 +88,7 @@ export const BarCharDetail = () => {
                                 {'$XX'}
                             </div>
                             <span className='text-smxm md:text-lg'>
-                                {t('per_month')}
+                                {t('about_affiliates_month')}
                             </span>
                         </div>
                         <motion.img

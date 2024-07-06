@@ -9,7 +9,7 @@ export const AboutUs = () => {
         <div className='container mx-auto mb-[151px] flex w-full flex-col-reverse gap-10 md:flex-row md:gap-[70px] xl:px-[200px]'>
             <div className='flex flex-1 flex-col gap-10 px-5'>
                 <span className='text-3xl font-semibold md:text-4xls'>
-                    {t('About')}
+                    {t('home_about_us')}
                 </span>
                 <div className='flex flex-col gap-[20px] text-basem'>
                     <span>{t('company_overview')}</span>
