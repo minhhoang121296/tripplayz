@@ -48,14 +48,14 @@ export const Deposit = () => {
     return (
         <div className='mdmb-[141px] container mx-auto mb-[101px] flex w-full flex-col gap-[40px] px-5 xl:px-[200px]'>
             <span className='text-3xl font-semibold md:text-4xls'>
-                {t('deposits_and_withdraw')}
+                {t('home_deposit_withdraw')}
             </span>
             <div className='item-start flex flex-col gap-[30px] md:flex-row md:gap-[120px]'>
                 <div className='flex flex-1 flex-col gap-[40px]'>
                     <div className='flex flex-1 flex-col gap-5 text-basem'>
-                        <span>{t('payment_systems_info')}</span>
+                        <span>{t('home_deposit_withdraw_text01')}</span>
                         <span className='font-bold'>
-                            {t('minimum_deposit')} - $10
+                            {t('home_deposit_withdraw_text02')}
                         </span>
                     </div>
                     <div className='flex flex-1 md:hidden'>
@@ -67,11 +67,11 @@ export const Deposit = () => {
                     </div>
                     <div className='flex flex-col gap-5 md:flex-row'>
                         <Button size={'md'} variant={'whiteOutline'}>
-                            {t('learn_more')}
+                            {t('bt_home_learn_more')}
                         </Button>
                         <Button size={'md'} variant={'primaryShadow'}>
                             <User />
-                            <span>{t('open_account')}</span>
+                            <span>{t('bt_home_open_account')}</span>
                         </Button>
                     </div>
                 </div>

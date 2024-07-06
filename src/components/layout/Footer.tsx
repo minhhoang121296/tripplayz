@@ -12,46 +12,46 @@ export const Footer = () => {
                 <div className='flex flex-col gap-[30px] md:flex-row md:gap-[108px]'>
                     <div className='flex flex-col gap-5'>
                         <span className='text-lg font-semibold text-white'>
-                            {t('navigation')}
+                            {t('footer_navigation')}
                         </span>
                         <div className='flex flex-col'>
                             <span className='text-baselg text-white'>
-                                {t('terms_and_conditions')}
+                                {t('footer_terms')}
                             </span>
                             <span className='text-baselg text-white'>
-                                {t('contact_us')}
+                                {t('footer_contact_us')}
                             </span>
                             <span className='text-baselg text-white'>
-                                {t('demo_account')}
+                                {t('footer_demo_account')}
                             </span>
                             <span className='text-baselg text-white'>
-                                {t('create_account')}
+                                {t('footer_create_account')}
                             </span>
                             <span className='text-baselg text-white'>
-                                {t('sitemap')}
+                                {t('footer_sitemap')}
                             </span>
                         </div>
                     </div>
                     <div className='flex flex-col gap-5'>
                         <span className='text-lg font-semibold text-white'>
-                            {t('contact')}
+                            {t('footer_contact')}
                         </span>
                         <div className='flex flex-col'>
                             <span className='text-baselg text-white'>
-                                kerdant@kerdant.com
+                                {t('footer_email')}
                             </span>
                             <span className='text-baselg text-white'>
-                                +1 321 334 0223
+                                {t('footer_phone')}
                             </span>
                             <span className='text-baselg text-white'>
-                                {t('working_hours')}
+                                {t('footer_open_hours')}
                             </span>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-col gap-5'>
                     <span className='text-lg font-semibold text-white'>
-                        {t('follow_us')}
+                        {t('footer_follow_us')}
                     </span>
                     <div className='flex flex-col'>
                         <div className='flex flex-row items-center gap-2'>
@@ -68,7 +68,7 @@ export const Footer = () => {
                                 title='Facebook'
                                 className='text-baselg text-white'
                             >
-                                Facebook
+                                {t('footer_facebook')}
                             </a>
                         </div>
 
@@ -85,7 +85,7 @@ export const Footer = () => {
                                 title='Instagram'
                                 className='text-baselg text-white'
                             >
-                                Instagram
+                                {t('footer_instagram')}
                             </a>
                         </div>
 
@@ -102,7 +102,7 @@ export const Footer = () => {
                                 title='Twitter'
                                 className='text-baselg text-white'
                             >
-                                Twitter
+                                {t('footer_twitter')}
                             </a>
                         </div>
 
@@ -119,7 +119,7 @@ export const Footer = () => {
                                 title='LinkedIn'
                                 className='text-baselg text-white'
                             >
-                                LinkedIn
+                                {t('footer_linkedin')}
                             </a>
                         </div>
                         <div className='flex flex-row items-center gap-2'>
@@ -135,14 +135,14 @@ export const Footer = () => {
                                 title='Discord'
                                 className='text-baselg text-white'
                             >
-                                Discord
+                                {t('footer_discord')}
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='container mx-auto flex flex-col gap-[30px] px-2.5 md:px-0 xl:px-[200px]'>
-                <p className='text-xsm text-white/50'>{t('risk_warning')}</p>
+                <p className='text-xsm text-white/50'>{t('footer_text03')}</p>
             </div>
         </div>
     )

@@ -7,7 +7,7 @@ export const OnlneTrading = () => {
             <div className='container mx-auto flex w-full flex-col items-start gap-[61px] px-5 pb-[42px] pt-[71px] md:flex-row xl:px-[190px]'>
                 <div className='flex flex-col gap-5 md:w-[525px]'>
                     <span className='text-3xl font-semibold text-white md:text-4xls'>
-                        {t('online_trading_platform')}
+                        {t('footer_heading')}
                     </span>
                     <span className='text-xl text-white'>
                         {t('cfd_offerings')}

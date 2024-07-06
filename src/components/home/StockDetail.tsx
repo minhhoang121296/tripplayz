@@ -62,10 +62,6 @@ export const StockDetail = () => {
                 <span className='text-xs text-black/75'>
                     {t('past_performance_disclaimer')}
                 </span>
-                {/* <Button className='gap-2' size={'lg'} variant={'outline'}>
-                    <span>{t('see_all_options')}</span>
-                    <ArrowRight />
-                </Button> */}
             </div>
         </div>
     )

@@ -19,10 +19,10 @@ export const InforToContact = () => {
                         </div>
                     </div>
                     <span className='text-lg font-semibold'>
-                        +13 456 789 000
+                        {t('contact_icon01_phone')}
                     </span>
                     <span className='p-2.5 text-basem'>
-                        {t('quick_assistance')}
+                        {t('contact_icon01_text')}
                     </span>
                 </div>
                 <div className='flex h-full w-full flex-col items-center gap-2.5 text-center'>
@@ -36,10 +36,10 @@ export const InforToContact = () => {
                         </div>
                     </div>
                     <span className='text-lg font-semibold'>
-                        support@kerdant.com
+                        {t('contact_icon02_email')}
                     </span>
                     <span className='p-2.5 text-basem'>
-                        {t('email_support')}
+                        {t('contact_icon02_text')}
                     </span>
                 </div>
                 <div className='flex h-full w-full flex-col items-center gap-2.5 text-center'>
@@ -53,10 +53,10 @@ export const InforToContact = () => {
                         </div>
                     </div>
                     <span className='text-lg font-semibold'>
-                        {t('live_chat')}
+                        {t('contact_icon03_chat')}
                     </span>
                     <span className='p-2.5 text-basem'>
-                        {t('chat_support')}
+                        {t('contact_icon03_text')}
                     </span>
                 </div>
             </div>
