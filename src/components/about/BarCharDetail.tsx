@@ -17,19 +17,22 @@ export const BarCharDetail = () => {
     }
 
     return (
-        <div className='container mx-auto mb-4 flex w-full flex-col px-5 py-[44px] md:py-[80px] md:pb-[82px] xl:px-[340px]'>
-            <div className='flex w-full flex-col gap-[60px] text-center'>
-                <div className='flex w-full flex-col items-center justify-center gap-[30px] text-center'>
+        <div className='container mx-auto mb-4 flex w-full flex-col  py-[44px] md:py-[80px] md:pb-[82px] xl:px-[340px]'>
+            <div className='flex w-full flex-col gap-[60px]  text-center'>
+                <div className='flex w-full flex-col items-center justify-center gap-[30px] px-5 text-center'>
                     <div className='flex flex-col px-[13.5px] py-2.5'>
                         <p className='text-3xl font-semibold md:text-4xls'>
                             {t('about_affiliates')}
                         </p>
                     </div>
-                    <span className='p-2.5 text-basem md:w-[482px]'>
+                    <span className='text-basem md:w-[482px]'>
                         {t('about_affiliates_text')}
                     </span>
                 </div>
-                <div className='flex w-full items-end justify-center' ref={ref}>
+                <div
+                    className='flex w-full items-end justify-center px-[26px]'
+                    ref={ref}
+                >
                     <div>
                         <div className='flex flex-col'>
                             <div className='flex flex-row justify-center text-2xl font-semibold md:text-4xls'>

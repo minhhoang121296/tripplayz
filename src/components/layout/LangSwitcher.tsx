@@ -12,11 +12,11 @@ const LangSwitcher = ({ onSelect }: Props) => {
     const urlSegments = useSelectedLayoutSegments()
 
     return (
-        <div className='relative'>
-            {optionsLanguage.map(lang => {
+        <div className='relative h-[192px] overflow-y-auto'>
+            {optionsLanguage.map((lang, index) => {
                 return (
                     <Link
-                        key={lang.code}
+                        key={index}
                         onClick={() => onSelect(lang)}
                         href={`/${lang.code}/${urlSegments.join('/')}`}
                     >

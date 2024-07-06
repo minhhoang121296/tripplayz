@@ -1,7 +1,6 @@
 'use client'
 import {
     Tooltip,
-    TooltipContent,
     TooltipProvider,
     TooltipTrigger
 } from '@/components/ui/tooltip'
@@ -27,9 +26,9 @@ export const QuickContactButton = ({ locale }: IProps) => {
                                 <MessageSquareMore />
                             </Button>
                         </TooltipTrigger>
-                        <TooltipContent>
+                        {/* <TooltipContent>
                             <p>{t('contact_with_us')}</p>
-                        </TooltipContent>
+                        </TooltipContent> */}
                     </Tooltip>
                 </TooltipProvider>
             </div>
