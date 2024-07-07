@@ -5,3 +5,5 @@ export enum TRADING_TYPE {
     COMMODITIES = 'commodities',
     ETF = 'etf'
 }
+
+export type MenuButtonAction = 'menu' | 'language' | 'close'

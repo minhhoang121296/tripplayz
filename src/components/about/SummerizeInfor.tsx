@@ -16,7 +16,7 @@ export const SummerizeInfor = () => {
             </div>
             <div className='flex w-full flex-col justify-center gap-[30px] md:flex-row md:gap-[60px]'>
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
-                    <div className=' flex justify-center text-7xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
+                    <div className=' flex justify-center text-7xl font-light text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
                         {'+'}
                         <AnimatedNumberOnScroll
                             duration={3000}
@@ -29,7 +29,7 @@ export const SummerizeInfor = () => {
                     </p>
                 </div>
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
-                    <div className=' flex justify-center text-7xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
+                    <div className=' flex justify-center text-7xl font-light text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
                         {'+'}
                         <AnimatedNumberOnScroll
                             duration={3000}
@@ -42,7 +42,7 @@ export const SummerizeInfor = () => {
                     </p>
                 </div>
                 <div className='flex flex-1 flex-col gap-[14px] text-center'>
-                    <div className='flex justify-center text-7xl text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
+                    <div className='flex justify-center text-7xl font-light text-blue drop-shadow-[0_4px_40px_#0055FF80] md:text-9xl'>
                         {'+'}
                         <AnimatedNumberOnScroll
                             duration={3000}

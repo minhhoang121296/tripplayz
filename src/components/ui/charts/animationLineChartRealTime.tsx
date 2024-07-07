@@ -21,7 +21,7 @@ export const ApexChartRealTime = ({ width, height }: Iprops) => {
         { x: 4, y: Math.floor(25) },
         { x: 5, y: Math.floor(40) },
         { x: 6, y: Math.floor(70) },
-        { x: 7, y: Math.floor(90) },
+        { x: 7, y: Math.floor(90) }
     ])
     const [options] = useState<ApexOptions>({
         chart: {
@@ -134,7 +134,6 @@ export const ApexChartRealTime = ({ width, height }: Iprops) => {
         }
     })
 
-
     const chartRef = useRef<any | null>(null)
 
     // useEffect(() => {
@@ -154,17 +153,15 @@ export const ApexChartRealTime = ({ width, height }: Iprops) => {
     // }, [series])
 
     return (
-        <div>
-            <div id='chart'>
-                <ReactApexChart
-                    ref={chartRef}
-                    options={options}
-                    series={[{ data: series }]}
-                    type='line'
-                    width={width || 350}
-                    height={height || 350}
-                />
-            </div>
+        <div id='chart'>
+            <ReactApexChart
+                ref={chartRef}
+                options={options}
+                series={[{ data: series }]}
+                type='line'
+                width={width || 350}
+                height={height || 350}
+            />
         </div>
     )
 }

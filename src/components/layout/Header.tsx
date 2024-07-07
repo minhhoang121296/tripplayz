@@ -1,4 +1,5 @@
 'use client'
+import { MenuButtonAction } from '@/@types'
 import { Colors } from '@/assets/colors'
 import {
     DropdownMenu,
@@ -21,6 +22,7 @@ import { useWindowSize } from 'usehooks-ts'
 import { IconBase } from '../custom/IconBase'
 import { Button } from '../ui/button'
 import LangSwitcher from './LangSwitcher'
+import LangSwitcherMobile from './LangSwitcherMobile'
 
 interface Props {
     locale: string
@@ -30,7 +32,7 @@ export const Header: FC<Props> = ({ locale }) => {
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/'
     const { width, height } = useWindowSize()
     const [activeKey, setActiveKey] = useState(undefined)
-    const [activeMenu, setActiveMenu] = useState(false)
+    const [activeMenu, setActiveMenu] = useState<MenuButtonAction>('close')
     const [isScrolled, setIsScrolled] = useState(false)
 
     const t = useTranslations('')
@@ -40,7 +42,7 @@ export const Header: FC<Props> = ({ locale }) => {
 
     useEffect(() => {
         if (width > 768) {
-            setActiveMenu(false)
+            setActiveMenu('close')
         }
         return () => {}
     }, [width])
@@ -136,74 +138,91 @@ export const Header: FC<Props> = ({ locale }) => {
                     </div>
                 </div>
                 <div className='flex flex-row items-center gap-10'>
-                    <DropdownMenu>
-                        <DropdownMenuTrigger>
-                            <button
-                                onClick={() => {}}
-                                className='flex flex-row items-center gap-1'
-                            >
-                                <Image
-                                    src={langSlect?.images || ''}
-                                    width={24}
-                                    height={24}
-                                    alt='eth'
-                                />
-                                <>
-                                    {pathname == '/' ? (
-                                        <Icon
-                                            path={mdiMenuDown}
-                                            color={
-                                                isScrolled
-                                                    ? Colors.black['DEFAULT']
-                                                    : Colors.white
-                                            }
-                                            size={1}
-                                        />
-                                    ) : (
-                                        <Icon path={mdiMenuDown} size={1} />
-                                    )}
-                                </>
-                            </button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent>
-                            <LangSwitcher onSelect={lang => {}} />
-                        </DropdownMenuContent>
-                    </DropdownMenu>
-
-                    <button
-                        className='md:hidden'
-                        onClick={() => {
-                            setActiveMenu(!activeMenu)
-                        }}
-                    >
-                        {!activeMenu ? (
-                            <>
-                                {pathname == '/' ? (
-                                    <IconBase
-                                        icon='menu'
-                                        size={24}
-                                        color={
-                                            isScrolled
-                                                ? Colors.black['DEFAULT']
-                                                : Colors.white
+                    {activeMenu == 'close' && (
+                        <DropdownMenu>
+                            <DropdownMenuTrigger>
+                                <a
+                                    onClick={() => {
+                                        if (width < 768) {
+                                            setActiveMenu('language')
                                         }
+                                    }}
+                                    className='flex flex-row items-center gap-1'
+                                >
+                                    <Image
+                                        src={langSlect?.images || ''}
+                                        width={24}
+                                        height={24}
+                                        alt='eth'
                                     />
-                                ) : (
-                                    <IconBase
-                                        icon='menu'
-                                        size={24}
-                                        color={Colors.blue['DEFAULT']}
-                                    />
-                                )}
-                            </>
-                        ) : (
+                                    <>
+                                        {pathname == '/' ? (
+                                            <Icon
+                                                path={mdiMenuDown}
+                                                color={
+                                                    isScrolled
+                                                        ? Colors.black[
+                                                              'DEFAULT'
+                                                          ]
+                                                        : Colors.white
+                                                }
+                                                size={1}
+                                            />
+                                        ) : (
+                                            <Icon path={mdiMenuDown} size={1} />
+                                        )}
+                                    </>
+                                </a>
+                            </DropdownMenuTrigger>
+                            {width > 768 && (
+                                <DropdownMenuContent>
+                                    <LangSwitcher onSelect={lang => {}} />
+                                </DropdownMenuContent>
+                            )}
+                        </DropdownMenu>
+                    )}
+
+                    {activeMenu == 'close' && (
+                        <button
+                            className='md:hidden'
+                            onClick={() => {
+                                setActiveMenu('menu')
+                            }}
+                        >
+                            {pathname == '/' ? (
+                                <IconBase
+                                    icon='menu'
+                                    size={24}
+                                    color={
+                                        isScrolled
+                                            ? Colors.black['DEFAULT']
+                                            : Colors.white
+                                    }
+                                />
+                            ) : (
+                                <IconBase
+                                    icon='menu'
+                                    size={24}
+                                    color={Colors.blue['DEFAULT']}
+                                />
+                            )}
+                        </button>
+                    )}
+
+                    {activeMenu != 'close' && (
+                        <button
+                            className='md:hidden'
+                            onClick={() => {
+                                setActiveMenu('close')
+                            }}
+                        >
                             <IconBase
                                 icon='close'
                                 size={24}
                                 color={Colors.black['DEFAULT']}
                             />
-                        )}
-                    </button>
+                        </button>
+                    )}
 
                     <div className='hidden flex-row gap-5 md:flex'>
                         <Button size={'sm'} variant={'whiteOutline'}>
@@ -215,11 +234,11 @@ export const Header: FC<Props> = ({ locale }) => {
                     </div>
                 </div>
             </div>
-            {activeMenu && (
+            {activeMenu == 'menu' && (
                 <div className='w-full bg-black-darkBlack'>
                     {dataNestedRoute?.map((item, index) => (
                         <Link
-                            onClick={() => setActiveMenu(false)}
+                            onClick={() => setActiveMenu('close')}
                             key={index}
                             lang={locale}
                             href={item.routePath as any}
@@ -233,6 +252,12 @@ export const Header: FC<Props> = ({ locale }) => {
                             {t(item.name)}
                         </Link>
                     ))}
+                </div>
+            )}
+
+            {activeMenu == 'language' && (
+                <div className='w-full bg-black-darkBlack'>
+                    <LangSwitcherMobile locale={locale} onSelect={lang => {}} />
                 </div>
             )}
         </div>

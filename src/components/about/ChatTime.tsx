@@ -14,13 +14,13 @@ export const ChatTime = () => {
                         {t('about_responding')}
                     </p>
                 </div>
-                <div className='flex flex-col items-center gap-[55px] px-2.5 md:flex md:flex-row md:gap-[55px]'>
+                <div className='flex flex-col items-center gap-[55px] px-[11px] md:flex md:flex-row md:gap-[55px]'>
                     <div className='flex flex-1 flex-col gap-4 text-center'>
                         <div className='pb-6 text-3xl text-white md:text-4xl'>
                             {t('about_responding_chat')}
                         </div>
                         <div className='flex flex-col '>
-                            <div className='flex flex-row border-y border-[#949494]/50 py-[22px] text-white'>
+                            <div className='flex flex-row border-[#949494]/50 py-[22px] text-white md:border-y'>
                                 <span className='font-lightmd:text-lg  flex-1 font-semibold'>
                                     {t('about_responding_chat_may')}
                                 </span>
@@ -76,10 +76,10 @@ export const ChatTime = () => {
                     </div>
                     <div className='flex flex-1 flex-col gap-4 text-center'>
                         <div className='pb-6 text-3xl text-white md:text-4xl'>
-                            {t('Email')}
+                            {t('about_responding_email')}
                         </div>
                         <div className='flex flex-col '>
-                            <div className='flex flex-row border-y border-[#949494]/50 py-[22px] text-white'>
+                            <div className='flex flex-row border-[#949494]/50 py-[22px] text-white md:border-y'>
                                 <span className='font-lightmd:text-lg  flex-1 font-semibold'>
                                     {t('about_responding_chat_may')}
                                 </span>

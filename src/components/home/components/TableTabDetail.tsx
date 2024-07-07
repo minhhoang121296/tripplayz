@@ -1,5 +1,4 @@
 import { TRADING_TYPE } from '@/@types'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import Sparkline from '@/components/ui/charts/Sparkline'
 import {
@@ -219,10 +218,11 @@ export const TableTabDetail = ({ type }: Iprops) => {
                             >
                                 <div className='flex w-full flex-col gap-5'>
                                     <div className='flex flex-[2] flex-row gap-2'>
-                                        <Avatar>
-                                            <AvatarImage src={el.image} />
-                                            <AvatarFallback>CN</AvatarFallback>
-                                        </Avatar>
+                                        <img
+                                            src={el.image}
+                                            alt={el.currencyPair}
+                                            className='h-[42px] w-[52px] object-contain'
+                                        />
                                         <div className='flex flex-col'>
                                             <span className='font-bold'>
                                                 {el.currencyPair}

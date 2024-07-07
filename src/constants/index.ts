@@ -24,7 +24,7 @@ export const dataNestedRoute = [
 
 export const optionsLanguage = [
     {
-        images: '/images/app/nations/Bengali.jpg',
+        images: '/images/app/nations/Bengali.png',
         country: 'বাংলা',
         code: 'be'
     }, // Native name is the same
