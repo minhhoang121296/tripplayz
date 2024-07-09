@@ -1,5 +1,6 @@
 'use client'
 import { optionsLanguage } from '@/constants'
+import { sortByAlpha, toUpperCaseEachWord } from '@/helpers'
 import { cn } from '@/lib/utils'
 import { CircleCheck } from 'lucide-react'
 import Link from 'next/link'
@@ -15,8 +16,8 @@ const LangSwitcherMobile = ({ onSelect, locale }: Props) => {
     const urlSegments = useSelectedLayoutSegments()
 
     return (
-        <div className='flex h-[192px] w-full flex-col overflow-y-auto'>
-            {optionsLanguage.map((lang, index) => {
+        <div className='flex h-[229px] w-full flex-col overflow-y-auto'>
+            {sortByAlpha(optionsLanguage, 'code').map((lang, index) => {
                 return (
                     <Link
                         key={index}
@@ -42,7 +43,7 @@ const LangSwitcherMobile = ({ onSelect, locale }: Props) => {
                                     alt={lang.country}
                                     className='h-[24px] w-[24px] object-contain'
                                 />
-                                {lang.country}
+                                {toUpperCaseEachWord(lang.country)}
                             </div>
                             {locale == lang.code && (
                                 <CircleCheck className='h-6 w-6 text-green-400' />

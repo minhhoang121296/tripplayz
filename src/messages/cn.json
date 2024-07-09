@@ -1,4 +1,7 @@
 {
+    "footer_text04": "受限国家：Kerdant Ltd不向美国、加拿大、巴西和阿拉伯联合酋长国（阿联酋）等特定国家的居民提供服务，或者在这些国家分布或使用此类服务违反当地法律或法规的情况下。",
+    "register_number": "注册号 2024-00344",
+
     "no_spreads": "无点差,",
     "instant_withdrawals": "即时提款!",
     "no_waiting": "无需等待!",
@@ -16,7 +19,7 @@
     "crypto": "Crypto",
     "stocks": "Stocks",
     "commodities": "Commodities",
-    "etfs": "ETFs",
+    "etfs": "Indices",
     "stocks_cfd": "(CFD)",
     "chat": "Chat",
     "Bid": "Bid",

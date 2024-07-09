@@ -47,7 +47,7 @@ export default function RootLayout({
                     <div className='relative min-h-screen w-full'>
                         <Header locale={locale} />
                         <Maincontent>{children}</Maincontent>
-                        <Footer />
+                        <Footer locale={locale} />
                         <QuickContactButton locale={locale} />
                     </div>
                 </NextIntlClientProvider>

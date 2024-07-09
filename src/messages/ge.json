@@ -1,4 +1,7 @@
 {
+    "footer_text04": "Eingeschränkte Länder: Kerdant Ltd bietet keine Dienstleistungen für Bewohner bestimmter Länder wie die Vereinigten Staaten von Amerika, Kanada, Brasilien und die Vereinigten Arabischen Emirate (VAE) an oder in einem Land, in dem eine solche Verteilung oder Nutzung gegen lokale Gesetze oder Vorschriften verstoßen würde.",
+    "register_number": "REGISTRIERNUMMER 2024-00344",
+
     "no_spreads": "KEINE SPREADS,",
     "instant_withdrawals": "sofortige Auszahlungen!",
     "no_waiting": "kein Warten!",
@@ -16,7 +19,7 @@
     "crypto": "Crypto",
     "stocks": "Stocks",
     "commodities": "Commodities",
-    "etfs": "ETFs",
+    "etfs": "Indices",
     "stocks_cfd": "(CFD)",
     "chat": "Chat",
     "Bid": "Bid",

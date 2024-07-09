@@ -1,10 +1,15 @@
 'use client'
 
 import { Colors } from '@/assets/colors'
+import { Link } from '@/lib/navigation'
 import { useTranslations } from 'next-intl'
 import { IconBase } from '../custom/IconBase'
 
-export const Footer = () => {
+interface Iprops {
+    locale: string
+}
+
+export const Footer = ({ locale }: Iprops) => {
     const t = useTranslations('')
     return (
         <div className='flex w-full flex-col gap-10 bg-black-darkBlack pb-[75px] pt-[72px]'>
@@ -18,9 +23,11 @@ export const Footer = () => {
                             <span className='text-baselg text-white'>
                                 {t('footer_terms')}
                             </span>
-                            <span className='text-baselg text-white'>
-                                {t('footer_contact_us')}
-                            </span>
+                            <Link lang={locale} href={'/support'}>
+                                <span className='text-baselg text-white'>
+                                    {t('footer_contact_us')}
+                                </span>
+                            </Link>
                             <span className='text-baselg text-white'>
                                 {t('footer_demo_account')}
                             </span>
@@ -45,6 +52,14 @@ export const Footer = () => {
                             </span>
                             <span className='text-baselg text-white'>
                                 {t('footer_open_hours')}
+                            </span>
+                        </div>
+                        <div className='flex flex-col text-xsm text-white'>
+                            <span>{t('register_number')}</span>
+                            <span>
+                                {
+                                    'Ground Floor, The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia'
+                                }
                             </span>
                         </div>
                     </div>
@@ -143,6 +158,7 @@ export const Footer = () => {
             </div>
             <div className='container mx-auto flex flex-col gap-[30px] px-2.5 md:px-0 xl:px-[200px]'>
                 <p className='text-xsm text-white/50'>{t('footer_text03')}</p>
+                <p className='text-xsm text-white/50'>{t('footer_text04')}</p>
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 'use client'
 import { optionsLanguage } from '@/constants'
+import { sortByAlpha, toUpperCaseEachWord } from '@/helpers'
 import Link from 'next/link'
 import { usePathname, useSelectedLayoutSegments } from 'next/navigation'
 
@@ -12,8 +13,8 @@ const LangSwitcher = ({ onSelect }: Props) => {
     const urlSegments = useSelectedLayoutSegments()
 
     return (
-        <div className='relative h-[192px] overflow-y-auto'>
-            {optionsLanguage.map((lang, index) => {
+        <div className='relative'>
+            {sortByAlpha(optionsLanguage, 'code').map((lang, index) => {
                 return (
                     <Link
                         key={index}
@@ -39,7 +40,7 @@ const LangSwitcher = ({ onSelect }: Props) => {
                                 alt={lang.country}
                                 className='h-[24px] w-[24px] object-contain'
                             />
-                            {lang.country}
+                            {toUpperCaseEachWord(lang.country)}
                         </button>
                     </Link>
                 )

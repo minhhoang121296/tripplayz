@@ -1,4 +1,7 @@
 {
+    "footer_text04": "ประเทศที่จำกัด: Kerdant Ltd ไม่ให้บริการสำหรับผู้พักอาศัยในบางประเทศเช่น สหรัฐอเมริกา, แคนาดา, บราซิล และสหรัฐอาหรับเอมิเรตส์ (UAE) หรือประเทศที่การกระจายหรือการใช้งานดังกล่าวจะขัดกับกฎหมายหรือระเบียบข้อบังคับท้องถิ่น",
+    "register_number": "หมายเลขทะเบียน 2024-00344",
+
     "no_spreads": "ไม่มีสเปรด,",
     "instant_withdrawals": "ถอนเงินได้ทันที!",
     "no_waiting": "ไม่ต้องรอ!",
@@ -16,7 +19,7 @@
     "crypto": "Crypto",
     "stocks": "Stocks",
     "commodities": "Commodities",
-    "etfs": "ETFs",
+    "etfs": "Indices",
     "stocks_cfd": "(CFD)",
     "chat": "Chat",
     "Bid": "Bid",

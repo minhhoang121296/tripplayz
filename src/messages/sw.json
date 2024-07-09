@@ -1,4 +1,7 @@
 {
+    "footer_text04": "Begränsade länder: Kerdant Ltd tillhandahåller inte tjänster för invånare i vissa länder som USA, Kanada, Brasilien och Förenade Arabemiraten (UAE), eller i ett land där sådan distribution eller användning skulle strida mot lokal lag eller reglering.",
+    "register_number": "REGISTRERINGSNUMMER 2024-00344",
+
     "no_spreads": "INGA SPREADS,",
     "instant_withdrawals": "direktuttag!",
     "no_waiting": "ingen väntetid!",
@@ -16,7 +19,7 @@
     "crypto": "Crypto",
     "stocks": "Stocks",
     "commodities": "Commodities",
-    "etfs": "ETFs",
+    "etfs": "Indices",
     "stocks_cfd": "(CFD)",
     "chat": "Chat",
     "Bid": "Bid",
