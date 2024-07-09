@@ -1,4 +1,7 @@
 {
+    "footer_text04": "Kısıtlı Ülkeler: Kerdant Ltd, Amerika Birleşik Devletleri, Kanada, Brezilya ve Birleşik Arap Emirlikleri (BAE) gibi belirli ülkelerin sakinlerine hizmet vermemekte veya böyle bir dağıtımın veya kullanımın yerel yasa veya düzenlemelere aykırı olacağı bir ülkede hizmet sunmamaktadır.",
+    "register_number": "KAYIT NUMARASI 2024-00344",
+
     "no_spreads": "SPREAD YOK,",
     "instant_withdrawals": "anlık para çekme!",
     "no_waiting": "bekleme yok!",
@@ -17,7 +20,7 @@
     "crypto": "Crypto",
     "stocks": "Stocks",
     "commodities": "Commodities",
-    "etfs": "ETFs",
+    "etfs": "Indices",
     "stocks_cfd": "(CFD)",
     "chat": "Chat",
     "Bid": "Bid",

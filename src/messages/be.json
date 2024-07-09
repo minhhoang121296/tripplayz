@@ -1,4 +1,7 @@
 {
+    "footer_text04": "সীমিত দেশসমূহ: Kerdant Ltd মার্কিন যুক্তরাষ্ট্র, কানাডা, ব্রাজিল এবং সংযুক্ত আরব আমিরাত (UAE) সহ নির্দিষ্ট দেশের বাসিন্দাদের জন্য পরিষেবা সরবরাহ করে না, বা সেই দেশে এমন বিতরণ বা ব্যবহার যা স্থানীয় আইন বা বিধি বিরুদ্ধ হতে পারে।",
+    "register_number": "নিবন্ধন নম্বর 2024-00344",
+
     "no_spreads": "কোন ছড়ানো নেই,",
     "instant_withdrawals": "তাৎক্ষণিক উত্তোলন!",
     "no_waiting": "কোন অপেক্ষা নেই!",
@@ -16,7 +19,7 @@
     "crypto": "Crypto",
     "stocks": "Stocks",
     "commodities": "Commodities",
-    "etfs": "ETFs",
+    "etfs": "Indices",
     "stocks_cfd": "(CFD)",
     "chat": "Chat",
     "Bid": "Bid",

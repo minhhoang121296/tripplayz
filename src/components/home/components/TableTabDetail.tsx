@@ -142,7 +142,7 @@ export const TableTabDetail = ({ type }: Iprops) => {
                                             <span className='font-bold'>
                                                 {el.currencyPair}
                                             </span>
-                                            <span className='text-smxm text-gray-400'>
+                                            <span className='text-smxm font-medium text-black/50'>
                                                 {el.currencyPair}
                                             </span>
                                         </div>

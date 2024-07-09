@@ -1,4 +1,7 @@
 {
+    "footer_text04": "Negara-negara Terbatas: Kerdant Ltd tidak menyediakan layanan untuk penduduk beberapa negara seperti Amerika Serikat, Kanada, Brasil, dan Uni Emirat Arab (UEA), atau negara di mana distribusi atau penggunaan layanan tersebut melanggar hukum atau regulasi lokal.",
+    "register_number": "NOMOR REGISTRASI 2024-00344",
+
     "no_spreads": "TANPA SPREAD,",
     "instant_withdrawals": "penarikan instan!",
     "no_waiting": "tanpa menunggu!",
@@ -16,7 +19,7 @@
     "crypto": "Crypto",
     "stocks": "Stocks",
     "commodities": "Commodities",
-    "etfs": "ETFs",
+    "etfs": "Indices",
     "stocks_cfd": "(CFD)",
     "chat": "Chat",
     "Bid": "Bid",

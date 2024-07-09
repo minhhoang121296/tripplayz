@@ -14,11 +14,11 @@ const buttonVariants = cva(
                 primaryShadow:
                     'bg-blue text-white hover:bg-blue/90  drop-shadow-[0_5px_20px_rgba(0,85,255,0.25)]',
                 primaryOutline:
-                    'border border-blue bg-white text-blue hover:bg-blue-100 hover:text-blue-900',
+                    'border border-blue bg-white text-blue hover:bg-blue hover:text-white',
 
                 secondary: 'bg-magenta text-slate-900 hover:bg-slate-100/80',
                 secondaryOutline:
-                    'border border-magenta bg-white text-magenta hover:bg-magenta-100 hover:text-magenta-900',
+                    'border border-magenta bg-white text-magenta hover:bg-magenta hover:text-white',
 
                 black: 'bg-black text-white hover:bg-slate-100/80',
                 blackShadow:

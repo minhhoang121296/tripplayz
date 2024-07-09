@@ -11,7 +11,7 @@ import { useTranslations } from 'next-intl'
 export default function HomePage() {
     const t = useTranslations('')
     return (
-        <div className='flex w-full flex-col'>
+        <div className='flex w-full flex-col '>
             <div
                 className={`flex w-full flex-col bg-white-lightWhite md:bg-[url('/images/app/grid6.png')]`}
             >

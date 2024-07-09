@@ -10,7 +10,7 @@ export const Enjoy = () => {
             <div className='flex-1'>
                 <div className='flex w-full flex-col gap-[45px]'>
                     <img
-                        src='/images/app/phone.png'
+                        src='/images/app/enjoy.png'
                         alt='enjoy'
                         className='w-full md:hidden'
                     />
@@ -29,7 +29,7 @@ export const Enjoy = () => {
             <div className='flex w-full flex-row gap-[100px] px-5'>
                 <div className='hidden items-start md:flex'>
                     <img
-                        src='/images/app/phone.png'
+                        src='/images/app/enjoy.png'
                         alt='enjoy'
                         className='w-full md:h-[320px] md:w-[540px]'
                     />

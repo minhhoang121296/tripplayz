@@ -1,5 +1,6 @@
 .header {
-    position: -webkit-fixed;
+    -webkit-backdrop-filter: blur(10px); /* This line is important for iOS */
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
 }

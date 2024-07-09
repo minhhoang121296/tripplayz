@@ -5,7 +5,7 @@ export const Hero = () => {
 
     return (
         <div
-            className={`bg-scale-50 flex h-[460px] flex-col bg-[url('/images/app/about2.png')] bg-cover bg-center md:bg-[url('/images/app/about.png')]`}
+            className={`bg-scale-50 flex h-[460px] flex-col bg-[url('/images/app/about2.png')] bg-cover bg-center md:bg-[url('/images/app/about_us_hero.png')]`}
         >
             <div className='flex h-full w-full flex-col items-center justify-center gap-20'>
                 <div className='flex flex-col gap-[18px] text-center'>

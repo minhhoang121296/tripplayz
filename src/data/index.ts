@@ -101,7 +101,8 @@ export const forexdata = [
 
 export const crytocurrency = [
     {
-        image: '/images/coint/binance.png',
+        image: '/images/coint/bittcoin.png',
+
         currencyPair: 'BTC/USD',
         fullPairName: 'Bitcoin/USD',
         bid: 42.987,
@@ -111,7 +112,7 @@ export const crytocurrency = [
         series: series
     },
     {
-        image: '/images/coint/bittcoin.png',
+        image: '/images/coint/eth.png',
         currencyPair: 'ETH/USD',
         fullPairName: 'Ethereum/USD',
         bid: 42.987,
@@ -121,7 +122,7 @@ export const crytocurrency = [
         series: series
     },
     {
-        image: '/images/coint/cardano.png',
+        image: '/images/coint/binance.png',
         currencyPair: 'BNB/USD',
         fullPairName: 'Binance Coin/USD',
         bid: 42.987,
@@ -131,7 +132,7 @@ export const crytocurrency = [
         series: series
     },
     {
-        image: '/images/coint/eth.png',
+        image: '/images/coint/tnt.png',
         currencyPair: 'USDT/USD',
         fullPairName: 'Tether/USD',
         bid: 42.987,
@@ -141,7 +142,7 @@ export const crytocurrency = [
         series: series
     },
     {
-        image: '/images/coint/tnt.png',
+        image: '/images/coint/cardano.png',
         currencyPair: 'ADA/USD',
         fullPairName: 'Cardano/USD',
         bid: 42.987,
@@ -270,7 +271,7 @@ export const stocks = [
         series: series
     },
     {
-        image: '/images/stocks/AMZN.png',
+        image: '/images/stocks/MSFT.png',
         currencyPair: 'MSFT',
         fullPairName: 'Microsoft',
         bid: 42.987,
@@ -280,7 +281,7 @@ export const stocks = [
         series: series
     },
     {
-        image: '/images/stocks/GOOGL.png',
+        image: '/images/stocks/AMZN.png',
         currencyPair: 'AMZN',
         fullPairName: 'Amazon',
         bid: 42.987,
@@ -290,7 +291,7 @@ export const stocks = [
         series: series
     },
     {
-        image: '/images/stocks/MSFT.png',
+        image: '/images/stocks/GOOGL.png',
         currencyPair: 'GOOGL',
         fullPairName: 'Alphabet',
         bid: 42.987,

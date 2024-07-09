@@ -17,9 +17,9 @@ export const AboutUs = () => {
                     <span>{t('our_commitment')}</span>
                 </div>
             </div>
-            <div className='flex-1 md:-translate-y-20'>
+            <div className='flex-1 md:py-[34.5px]'>
                 <img
-                    src='/images/app/phone.png'
+                    src='/images/app/about_us.png'
                     alt='enjoy'
                     className='h-[266.67px] w-[540px] md:h-[400px]'
                 />
